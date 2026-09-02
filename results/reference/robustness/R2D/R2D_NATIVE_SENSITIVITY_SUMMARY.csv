@@ -1,0 +1,13 @@
+NP_ID,native_sensitivity_disposition,executed_units,result_class,result_detail
+NP01,NONE_SOURCE_DEFINED,0,NONE_SOURCE_DEFINED,No additional native sensitivity lever is source-defined.
+NP02,NONE_SOURCE_DEFINED,0,NONE_SOURCE_DEFINED,No source-defined native sensitivity beyond the completed robustness analyses.
+NP03,NONE_SOURCE_DEFINED,0,NONE_SOURCE_DEFINED,Direction ambiguity is represented by the two prespecified interpretation branches and is not treated as native sensitivity.
+NP04,EXECUTED_NATIVE_SENSITIVITY,30,SOURCE_DEFINED_SENSITIVITY_WITH_CHECKPOINT_ROUNDING_SENSITIVE_INTERNAL_TIE__NO_WINNER_EFFECT,30/30 SOURCE_DEFINED_EQ31 scenarios executed; baseline winner retained 26/30; S16 differs only in checkpoint/rounding-sensitive internal tie resolution; winner SFT-4 unchanged; source-workbook implementation inconsistency has 0 complete-rank and 0 winner-set effects.
+NP05,NONE_SOURCE_DEFINED,0,NONE_SOURCE_DEFINED,The six co-primary configurations are baseline configurations rather than sensitivity levers.
+NP06,PUBLICATION_REPORTED_ONLY__RECONSTRUCTION_NE,0,PUBLICATION_REPORTED_ONLY__RECONSTRUCTION_NE,Source reports interaction-off A4>A1>A2>A3 with 0.614/0.596/0.584/0.446; no uniquely executable source-defined surrogate reconstruction is available.
+NP07,NE_METHOD_OR_SOURCE,0,NE_METHOD_OR_SOURCE,No CBDO emulation.
+NP08,NE_METHOD_OR_SOURCE,0,NE_METHOD_OR_SOURCE,No source-defined sensitivity branch is available.
+NP09,NE_METHOD_OR_SOURCE,0,NE_METHOD_OR_SOURCE,No source-defined sensitivity branch is available.
+NP10,NE_METHOD_OR_SOURCE,0,NE_METHOD_OR_SOURCE,No native sensitivity is evaluable from the available public source chain.
+NP11,NONE_SOURCE_DEFINED,0,NONE_SOURCE_DEFINED,No additional LFPP native sensitivity is source-defined.
+NP12,EXECUTED_NATIVE_SENSITIVITY,5,SOURCE_REPORTED_Q_SWEEP_RECONSTRUCTED,5/5 q/v values reconstructed; recommendation set=A2 at all five values; 5/5 source comparisons matched

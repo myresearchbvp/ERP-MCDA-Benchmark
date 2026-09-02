@@ -1,0 +1,87 @@
+input_group,criterion,alternative,decision_maker,linguistic_term,value,direction,parameter,source_file,locator,note
+linguistic_scale,,,,EG,1.0,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,VVG,0.9,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,VG,0.8,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,G,0.7,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,MG,0.6,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,F,0.5,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,MP,0.4,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,P,0.3,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,VP,0.2,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_scale,,,,VVP,0.1,,,NP05_Akpinar_2025,"PDF p10, Table 1",Linguistic membership degree
+linguistic_rating,C1,A1,DM1,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A1,DM2,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A1,DM3,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A1,DM4,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A2,DM1,VG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A2,DM2,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A2,DM3,VG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A2,DM4,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A3,DM1,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A3,DM2,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A3,DM3,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C1,A3,DM4,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A1,DM1,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A1,DM2,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A1,DM3,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A1,DM4,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A2,DM1,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A2,DM2,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A2,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A2,DM4,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A3,DM1,VP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A3,DM2,P,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A3,DM3,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C2,A3,DM4,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A1,DM1,VVG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A1,DM2,VG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A1,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A1,DM4,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A2,DM1,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A2,DM2,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A2,DM3,VG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A2,DM4,VVG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A3,DM1,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A3,DM2,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A3,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C3,A3,DM4,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A1,DM1,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A1,DM2,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A1,DM3,G,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A1,DM4,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A2,DM1,VVG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A2,DM2,EG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A2,DM3,VVG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A2,DM4,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A3,DM1,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A3,DM2,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A3,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C4,A3,DM4,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A1,DM1,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A1,DM2,MP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A1,DM3,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A1,DM4,VP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A2,DM1,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A2,DM2,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A2,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A2,DM4,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A3,DM1,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A3,DM2,F,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A3,DM3,MG,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C5,A3,DM4,VP,,benefit,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A1,DM1,F,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A1,DM2,MG,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A1,DM3,F,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A1,DM4,F,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A2,DM1,G,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A2,DM2,G,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A2,DM3,G,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A2,DM4,G,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A3,DM1,MP,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A3,DM2,P,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A3,DM3,VVP,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+linguistic_rating,C6,A3,DM4,MP,,cost,,NP05_Akpinar_2025,"PDF p14, Table 2",Four decision-maker linguistic ratings
+method_constant,,,,,2,,q_CE_I,NP05_Akpinar_2025,"PDF p14, text below Table 3",Eq. (18) parameter q
+method_constant,,,,,3,,beta_CE_II,NP05_Akpinar_2025,"PDF p14, text below Table 3",Eq. (19) parameter beta
+method_constant,,,,,1,,HFEE_reference,NP05_Akpinar_2025,"PDF p11, Step 4 after Eq. (28)",Reference HFEE has all elements equal to 1
+method_constant,,,,,100,,utility_percent_scale,NP05_Akpinar_2025,"PDF p13, Step 12 prose after Eq. (38)",Ui reported/interpreted as percentage in results

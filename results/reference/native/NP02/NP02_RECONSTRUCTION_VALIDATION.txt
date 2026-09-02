@@ -1,0 +1,15 @@
+ERP-MCDA benchmark — NP02 PRECOMPARISON VALIDATION
+
+Criteria matrix: 5 x 5 — PASS
+Alternatives: ERP_A, ERP_B — PASS
+Alternative pairwise matrices: five 2 x 2 matrices — PASS
+Reciprocity/unit diagonals: PASS
+Criteria weight sum: 1.000000000000000 — PASS
+Each local alternative-weight vector sums to 1: PASS
+Final alternative-weight sum: 1.000000000000000 — PASS
+Consistency ratio: 0.063039341530; source acceptance threshold CR<0.1 — PASS
+Normalization: column normalization followed by row mean — PASS
+Tie handling: exact terminal ties would be represented as tied sets; none observed — PASS
+NaN/inf: PASS
+Published terminal values were not referenced by this script.
+Robustness analyses are reproduced separately by the robustness modules.

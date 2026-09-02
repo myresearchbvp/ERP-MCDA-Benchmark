@@ -1,0 +1,206 @@
+input_group,DM,alternative,criterion,value_1,value_2,value_3,source_file,locator,note
+DM_credibility,Lambda1,,,0.35,0.6,,NP09_Mahapatra_2025,"PDF p7, Table 4",Capable/Average
+DM_credibility,Lambda2,,,0.75,0.4,,NP09_Mahapatra_2025,"PDF p7, Table 4",Dominant/Very Significant
+DM_credibility,Lambda3,,,0.9,0.1,,NP09_Mahapatra_2025,"PDF p7, Table 4",Expert/Excellent
+criterion_rating_scale,,,CR-3,0.1,0.99,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR-2,0.15,0.9,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR-1,0.25,0.8,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR0,0.4,0.7,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR+1,0.6,0.55,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR+2,0.75,0.4,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_rating_scale,,,CR+3,0.9,0.2,,NP09_Mahapatra_2025,"PDF p8, Table 5",Pythagorean fuzzy rating
+criterion_direction,,,Xi11,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi12,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi13,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi14,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi15,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi21,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi22,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi23,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi24,benefit,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi31,cost,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi32,cost,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+criterion_direction,,,Xi33,cost,,,NP09_Mahapatra_2025,"PDF p6, Table 3 / PDF p8 Step I",B/C classification
+DM_rating,Lambda1,S1,Xi11,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi12,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi13,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi14,CR-2,-2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi15,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi21,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi23,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi31,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi32,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S1,Xi33,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi12,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi13,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi14,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi15,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi21,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi22,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi23,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi24,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi31,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi32,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S2,Xi33,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi11,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi12,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi13,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi14,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi15,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi22,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi23,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi24,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi31,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S3,Xi33,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi12,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi13,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi14,CR-2,-2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi15,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi21,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi22,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi24,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi31,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S4,Xi33,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi11,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi12,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi13,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi14,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi15,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi21,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi23,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi24,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi31,CR-2,-2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi32,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda1,S5,Xi33,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi11,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi12,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi13,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi14,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi15,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi22,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi23,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi24,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi31,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi32,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S1,Xi33,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi12,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi13,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi14,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi15,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi21,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi31,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi32,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S2,Xi33,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi11,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi12,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi13,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi14,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi15,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi21,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi22,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi23,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi31,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S3,Xi33,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi11,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi12,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi13,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi14,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi15,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi31,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi32,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S4,Xi33,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi11,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi12,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi13,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi14,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi15,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi21,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi22,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi23,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi24,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi31,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi32,CR-2,-2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda2,S5,Xi33,CR-3,-3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi12,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi13,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi14,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi15,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi31,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S1,Xi33,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi11,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi12,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi13,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi14,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi15,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi21,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi22,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi23,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi24,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi31,CR-1,-1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S2,Xi33,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi12,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi13,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi14,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi15,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi24,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi31,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi32,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S3,Xi33,CR-2,-2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi11,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi12,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi13,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi14,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi15,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi21,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi22,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi23,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi24,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi31,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi32,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S4,Xi33,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi11,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi12,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi13,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi14,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi15,CR+3,3,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi21,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi22,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi23,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi24,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi31,CR0,0,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi32,CR+2,2,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+DM_rating,Lambda3,S5,Xi33,CR+1,1,,NP09_Mahapatra_2025,"PDF p9, Table 7",linguistic rating; numeric code -3..+3
+printed_DM_preference,Lambda1,,,0.206,,,NP09_Mahapatra_2025,"PDF p8, Table 6",printed to 3 decimals
+printed_DM_preference,Lambda2,,,0.367,,,NP09_Mahapatra_2025,"PDF p8, Table 6",printed to 3 decimals
+printed_DM_preference,Lambda3,,,0.428,,,NP09_Mahapatra_2025,"PDF p8, Table 6",printed to 3 decimals

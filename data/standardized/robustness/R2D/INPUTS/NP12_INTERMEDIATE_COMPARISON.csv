@@ -1,0 +1,4 @@
+alternative,published_S,reconstructed_S,S_compatible,published_R,reconstructed_R,R_compatible,source_locator
+A1,0.5741,0.574053309407,TRUE,0.1000,0.100000000000,TRUE,"PDF p.12, Table 6"
+A2,0.0831,0.083073091937,TRUE,0.0591,0.059079283887,TRUE,"PDF p.12, Table 6"
+A3,0.8708,0.870833333333,TRUE,0.1000,0.100000000000,TRUE,"PDF p.12, Table 6"

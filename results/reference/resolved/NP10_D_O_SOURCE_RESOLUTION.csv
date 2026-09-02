@@ -1,0 +1,2 @@
+np_id,classification,D_level,O_level,unique_terminal_chain,genuine_source_blocker,decisive_source_condition,output_basis
+NP10,NOT_UNIQUELY_EVALUABLE_FROM_SUPPLIED_PUBLIC_SOURCE,D0,O3,NO,YES,Step 4a / Eq. (17): concrete Qb/Qn criterion-direction map absent; unique NA-IFDM cannot be formed,Article prints UFDs for A1/A2/A3 and complete order A1>A3>A2

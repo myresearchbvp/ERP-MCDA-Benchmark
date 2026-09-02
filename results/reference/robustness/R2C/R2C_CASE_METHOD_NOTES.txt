@@ -1,0 +1,26 @@
+ERP-MCDA benchmark — R2C CASE METHOD NOTES
+
+SCOPE
+Executed deterministic single-criterion deletion analysis under the prespecified protocol and documented applicability plan.
+No terminal-weight perturbation rerun, native sensitivity, or decision-matrix perturbation is part of this execution.
+
+EXECUTED DELETION-OUTCOME ROW COUNTS
+NP01=12 (12); NP02=5 (5); NP03=30 (30 = 15×2 paired branches); NP04=12 (12); NP05=30 (30 = C1–C5×6 co-primary configurations); NP07=11 (11); NP11=0 (0; single-criterion deletion NE); NP12=18 (18).
+Total executed deletion-outcome rows=118. Expected=118.
+
+METHOD INPUTS AND RULES
+NP01 — NATIVE_REWEIGHTING_AFTER_DELETION. The deleted subcriterion is removed from its own local triangular-fuzzy reciprocal pairwise matrix; that local fuzzy-AHP vector is recomputed with the prespecified literal geometric-mean/defuzzification algorithm. Three main-criterion weights remain unchanged. Global weights and TOPSIS are regenerated. No simple final-weight deletion substitute is used.
+NP02 — NATIVE_REWEIGHTING_AFTER_DELETION. The reduced criteria AHP matrix is solved by the prespecified column-normalization/row-mean rule; retained local alternative priorities are synthesized.
+NP03 — TERMINAL_POSTWEIGHT_DELETION from the prespecified D2 normalized checkpoint. Both A_STRICT_EXPLICIT_DIRECTION and ERP04_COST_PARALLEL are run for the same 15 deletion labels, separately, with no branch selection from outcomes.
+NP04 — TERMINAL_POSTWEIGHT_DELETION on the prespecified primary literal raw-supplement rough-normalized checkpoint. Remaining printed rough weights are not renormalized or collapsed; native rough-WISP K/P and four utility families are recomputed. The Table-6/rounding explanatory comparison outside the primary reconstruction is not used.
+NP05 — NATIVE_REWEIGHTING_AFTER_DELETION for C1–C5 in all six co-primary CE-I/CE-II × Hamming/Euclidean/Hausdorff configurations. Entropy-distance normalization is recomputed over retained criteria and the full p-HFC/COPRAS downstream chain is rerun. C6 is NE because it is the sole cost criterion; q=2 and beta=3 stay fixed.
+NP06 — NE. No reduced Choquet capacity or Shapley-index renormalization was invented. The publication-reported interaction-off comparison is treated separately under the source-defined sensitivity scope; no uniquely executable source-defined no-interaction reconstruction is available.
+NP07 — Kılıç et al. 2015 only. TERMINAL_POSTWEIGHT_DELETION with retained printed ANP weights renormalized and PROMETHEE II recomputed; V-shape p=2 fixed. Temur & Bolat CBDO is not emulated.
+NP08 — NE because no terminally unique baseline/tie-break exists.
+NP09 — NE because the literal native chain becomes nonfinite before terminal output.
+NP10 — NE at final D0/O3 source resolution because the concrete Qb/Qn map and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline can be defined from the documented public source chain.
+NP11 — NE for single-criterion deletion (C1–C6) by prespecified execution rule. Reason: NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL. No NP11 criterion deletion, solver recovery, alternate start, multistart, alternate solver, tolerance/bound/M change, gauge constraint, analytical tie-break, or fallback was run. DEMATEL remains excluded.
+NP12 — TERMINAL_POSTWEIGHT_DELETION with remaining published weights renormalized and q/v fixed at 0.5. S/R/Q and the same source-native VIKOR C1/C2 compromise-acceptance rule are recomputed. Native recommendation set is primary; top-Q leader is secondary only. The five publication-reported q/v values are reproduced separately by the source-defined sensitivity module.
+
+SCIENTIFIC INTERPRETATION
+Deletion fractions are descriptive shares of the finite, prospectively enumerated one-at-a-time criterion omissions under method-compatible recomputation. They are not probabilities and are not pooled into an ERP-literature-wide robustness/failure rate.

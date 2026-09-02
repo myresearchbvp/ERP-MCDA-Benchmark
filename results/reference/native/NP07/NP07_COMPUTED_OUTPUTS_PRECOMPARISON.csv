@@ -1,0 +1,7 @@
+publication_model,status,alternative,positive_flow,negative_flow,net_flow,rank,winner,note
+NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II,EVALUABLE,A,0.2437875,0.2033375,0.04045,2,NO,literal printed D2 checkpoint
+NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II,EVALUABLE,B,0.163875,0.207475,-0.0436,5,NO,literal printed D2 checkpoint
+NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II,EVALUABLE,C,0.1852375,0.2198875,-0.03465,4,NO,literal printed D2 checkpoint
+NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II,EVALUABLE,D,0.22285,0.2308125,-0.00796250000000004,3,NO,literal printed D2 checkpoint
+NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II,EVALUABLE,E,0.2923,0.2465375,0.0457625,1,YES,literal printed D2 checkpoint
+NP07_Temur_Bolat_2018 Temur & Bolat 2018 — CBDO robust reanalysis,NOT_EVALUABLE_AT_D3_FROM_PUBLIC_SOURCE,,,,,,,unseeded random CBDO GUI starting points/cloud state and implementation codes are not public in available source materials; no surrogate run performed

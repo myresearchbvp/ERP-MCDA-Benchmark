@@ -1,0 +1,15 @@
+NP_ID,component,final_status,final_classification,executed_units,source_resolution_note
+NP01,NATIVE_SENSITIVITY,NONE_SOURCE_DEFINED,NONE_SOURCE_DEFINED,0,No additional native sensitivity lever is source-defined.
+NP02,NATIVE_SENSITIVITY,NONE_SOURCE_DEFINED,NONE_SOURCE_DEFINED,0,No source-defined native sensitivity beyond the completed robustness analyses.
+NP03,NATIVE_SENSITIVITY,NONE_SOURCE_DEFINED,NONE_SOURCE_DEFINED,0,Direction ambiguity is represented by the two prespecified interpretation branches and is not treated as native sensitivity.
+NP04,NATIVE_SENSITIVITY,SOURCE_DEFINED_EQ31_RECONSTRUCTED__30_SCENARIOS__WINNER_RETENTION_26_OF_30,SOURCE_DEFINED_SENSITIVITY_RECONSTRUCTED,30,Eq. (31) weights match across the documented implementations; 0 winner-set differences; S16 is reported separately as the checkpoint/rounding-sensitive tie case.
+NP05,NATIVE_SENSITIVITY,NONE_SOURCE_DEFINED,NONE_SOURCE_DEFINED,0,The six co-primary configurations are baseline configurations rather than sensitivity levers.
+NP06,NATIVE_SENSITIVITY,PUBLICATION_REPORTED_ONLY__RECONSTRUCTION_NE,PUBLICATION_REPORTED_ONLY__RECONSTRUCTION_NE,0,Source reports interaction-off A4>A1>A2>A3 with 0.614/0.596/0.584/0.446; no uniquely executable source-defined surrogate reconstruction is available.
+NP07,NATIVE_SENSITIVITY,NE_METHOD_OR_SOURCE,NE_METHOD_OR_SOURCE,0,No CBDO emulation.
+NP08,NATIVE_SENSITIVITY,NE_METHOD_OR_SOURCE,NE_METHOD_OR_SOURCE,0,No source-defined sensitivity branch is available.
+NP09,NATIVE_SENSITIVITY,NE_METHOD_OR_SOURCE,NE_METHOD_OR_SOURCE,0,No source-defined sensitivity branch is available.
+NP10,NATIVE_SENSITIVITY,NE_METHOD_OR_SOURCE,NE_METHOD_OR_SOURCE,0,No native sensitivity is evaluable from the available public source chain.
+NP11,NATIVE_SENSITIVITY,NONE_SOURCE_DEFINED,NONE_SOURCE_DEFINED,0,No additional LFPP native sensitivity is source-defined.
+NP12,NATIVE_SENSITIVITY,SOURCE_REPORTED_Q_SWEEP_RECONSTRUCTED__5_OF_5_MATCH,SOURCE_REPORTED_Q_SWEEP_RECONSTRUCTED__5_OF_5_MATCH,5,Five source-reported q/v settings were reconstructed; A2 is the recommendation set at all five values; all source comparisons matched.
+NP04,S16_SOURCE_COMPARISON,CHECKPOINT_AND_ROUNDING_SENSITIVE_INTERNAL_TIE_RESOLUTION__NO_WINNER_EFFECT,CHECKPOINT_AND_ROUNDING_SENSITIVE_INTERNAL_TIE_RESOLUTION,1 source-comparison scenario,Same Eq.31 weights. D3-primary full-precision/raw-derived checkpoint resolves SFT-5 > SFT-6; source-native published checkpoint rounds both Yi to 0.9159 and matches source rank tie SFT-5=SFT-6. Winner SFT-4 unchanged.
+NP04,SOURCE_WORKBOOK_INCONSISTENCY,CONFIRMED_SCORE_LEVEL_SOURCE_ARTIFACT_INCONSISTENCY__NO_RANK_OR_WINNER_EFFECT,CONFIRMED_SCORE_LEVEL_SOURCE_ARTIFACT_INCONSISTENCY__NO_RANK_OR_WINNER_EFFECT,20 inconsistent weight records,S21-S30 x MSC/C11 x lower/upper endpoints. The source-workbook implementation inconsistency propagates to source-workbook terminal scores; 0 complete-rank changes and 0 winner-set changes versus source-defined Eq.31 branch.

@@ -1,0 +1,4 @@
+reference_artifact,portable_adapter,scientific_change,portability_note
+src/reference_implementations/native/NPxx_RECONSTRUCTION.py,src/portable/native_runner.py,NO,stages documented extracted inputs and compares reproduced outputs with reference fixtures
+src/reference_implementations/robustness/R2C_SINGLE_CRITERION_DELETION.py,src/portable/r2c_public_reproduction.py,NO,uses the published execution specification and stages the required public runtime inputs
+src/reference_implementations/robustness/R2D_SOURCE_DEFINED_SENSITIVITY.py,src/portable/r2d_public_reproduction.py,NO,recomputes the primary source-defined branch without redistributing the third-party workbook; repository source-audit records are integrity-checked

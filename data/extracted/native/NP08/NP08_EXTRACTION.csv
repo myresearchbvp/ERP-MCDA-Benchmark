@@ -1,0 +1,77 @@
+input_group,expert,alternative,criterion,item,value_1,value_2,value_3,source_file,locator,note
+linguistic_semantics,,,,A0,0,0,0.12,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A1,0,0.12,0.25,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A2,0.12,0.25,0.37,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A3,0.25,0.37,0.5,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A4,0.37,0.5,0.62,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A5,0.5,0.62,0.75,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A6,0.62,0.75,0.87,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A7,0.75,0.87,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,A8,0.87,1,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B0,0,0,0.16,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B1,0,0.16,0.33,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B2,0.16,0.33,0.5,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B3,0.33,0.5,0.66,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B4,0.5,0.66,0.83,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B5,0.66,0.83,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,B6,0.83,1,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,C0,0,0,0.25,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,C1,0,0.25,0.5,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,C2,0.25,0.5,0.75,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,C3,0.5,0.75,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+linguistic_semantics,,,,C4,0.75,1,1,NP08_Liao_Li_Lu_2007,"PDF p10, Table 1","triangular fuzzy membership (left, mode, right)"
+expert_decision_matrix,e1,x1,c1,linguistic_label,a8,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x1,c2,linguistic_label,b4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x1,c3,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x1,c4,linguistic_label,c1,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x2,c1,linguistic_label,a5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x2,c2,linguistic_label,b5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x2,c3,linguistic_label,b4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x2,c4,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x3,c1,linguistic_label,a7,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x3,c2,linguistic_label,b6,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x3,c3,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x3,c4,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x4,c1,linguistic_label,a3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x4,c2,linguistic_label,b4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x4,c3,linguistic_label,b5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e1,x4,c4,linguistic_label,c2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x1,c1,linguistic_label,b5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x1,c2,linguistic_label,a2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x1,c3,linguistic_label,c1,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x1,c4,linguistic_label,b2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x2,c1,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x2,c2,linguistic_label,a4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x2,c3,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x2,c4,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x3,c1,linguistic_label,b5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x3,c2,linguistic_label,a6,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x3,c3,linguistic_label,c2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x3,c4,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x4,c1,linguistic_label,b4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x4,c2,linguistic_label,a3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x4,c3,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e2,x4,c4,linguistic_label,b2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x1,c1,linguistic_label,b5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x1,c2,linguistic_label,a2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x1,c3,linguistic_label,c2,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x1,c4,linguistic_label,c1,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x2,c1,linguistic_label,b4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x2,c2,linguistic_label,a4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x2,c3,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x2,c4,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x3,c1,linguistic_label,b6,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x3,c2,linguistic_label,a7,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x3,c3,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x3,c4,linguistic_label,c3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x4,c1,linguistic_label,b3,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x4,c2,linguistic_label,a5,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x4,c3,linguistic_label,c4,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+expert_decision_matrix,e3,x4,c4,linguistic_label,c0,,,NP08_Liao_Li_Lu_2007,"PDF p10, numerical example step (1)",source-extracted label
+group_preference_relation,group,x3>=x2,,m_pq,2/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+group_preference_relation,group,x3>=x4,,m_pq,2/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+group_preference_relation,group,x2>=x4,,m_pq,2/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+group_preference_relation,group,x1>=x4,,m_pq,1/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+group_preference_relation,group,x3>=x1,,m_pq,2/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+group_preference_relation,group,x2>=x1,,m_pq,1/3,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (4)",importance degree of preference relation
+LP_parameter,group,,,h,1,,,NP08_Liao_Li_Lu_2007,"PDF p11, numerical example step (5)",group consistency threshold

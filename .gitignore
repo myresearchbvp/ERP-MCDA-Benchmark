@@ -1,0 +1,25 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.conda/
+
+# Reproduction outputs
+reproduced/
+reproduced_*/
+erp_mcda_full_reproduction_result.zip
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

@@ -1,0 +1,16 @@
+q_v,alternative,reconstructed_S,published_S,S_printed_precision_compatible,reconstructed_R,published_R,R_printed_precision_compatible,reconstructed_Q,published_Q,Q_printed_precision_compatible,reconstructed_rank,published_rank,rank_match,computed_C1,computed_C2,source_conditions_both_true,acceptability_conditions_match,comparison_class,source_locator
+0.00,A1,0.574053309407356,0.5741,YES,0.1,0.1000,YES,1,1.0000,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.00,A2,0.0830730919370036,0.0831,YES,0.059079283887468,0.0591,YES,0,0.0000,YES,1,1,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.00,A3,0.870833333333333,0.8708,YES,0.1,0.1000,YES,1,1.0000,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.25,A1,0.574053309407356,0.5741,YES,0.1,0.1000,YES,0.905815244178887,0.9058,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.25,A2,0.0830730919370036,0.0831,YES,0.059079283887468,0.0591,YES,0,0.0000,YES,1,1,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.25,A3,0.870833333333333,0.8708,YES,0.1,0.1000,YES,1,1.0000,YES,3,3,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.50,A1,0.574053309407356,0.5741,YES,0.1,0.1000,YES,0.811630488357774,0.8116,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.50,A2,0.0830730919370036,0.0831,YES,0.059079283887468,0.0591,YES,0,0.0000,YES,1,1,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.50,A3,0.870833333333333,0.8708,YES,0.1,0.1000,YES,1,1.0000,YES,3,3,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.75,A1,0.574053309407356,0.5741,YES,0.1,0.1000,YES,0.717445732536661,0.7174,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.75,A2,0.0830730919370036,0.0831,YES,0.059079283887468,0.0591,YES,0,0.0000,YES,1,1,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+0.75,A3,0.870833333333333,0.8708,YES,0.1,0.1000,YES,1,1.0000,YES,3,3,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+1.00,A1,0.574053309407356,0.5741,YES,0.1,0.1000,YES,0.623260976715548,0.6233,YES,2,2,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+1.00,A2,0.0830730919370036,0.0831,YES,0.059079283887468,0.0591,YES,0,0.0000,YES,1,1,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison
+1.00,A3,0.870833333333333,0.8708,YES,0.1,0.1000,YES,1,1.0000,YES,3,3,YES,TRUE,TRUE,YES,YES,MATCH,NP12 PDF pp.12-13 Tables 6-7; documented NP12 source extraction/comparison

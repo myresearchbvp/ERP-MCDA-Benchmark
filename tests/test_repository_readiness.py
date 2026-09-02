@@ -1,0 +1,21 @@
+from pathlib import Path
+import json, re
+R=Path(__file__).resolve().parents[1]
+
+def notebook_text():
+    nb=json.loads((R/'notebooks/full_reproduction_colab.ipynb').read_text(encoding='utf-8'))
+    return '\n'.join(''.join(c.get('source',[])) for c in nb.get('cells',[]))
+
+def test_colab_requires_real_url_commit_and_verifies_head():
+    text=notebook_text()
+    assert 'REPOSITORY_URL = ""' in text and 'EXACT_COMMIT = ""' in text
+    assert 'if not REPOSITORY_URL or not EXACT_COMMIT' in text
+    assert '["git", "checkout", EXACT_COMMIT]' in text
+    assert '["git", "rev-parse", "HEAD"]' in text
+    assert '["git", "rev-parse", EXACT_COMMIT]' in text
+    assert 'HEAD mismatch' in text
+    assert not re.search(r'https?://(?:example\.com|github\.com/[^"\s]+/[^"\s]+)',text)
+
+def test_reader_docs_and_release_metadata_are_present():
+    for rel in ['README.md','CITATION.cff','THIRD_PARTY_DATA_AND_LICENSES.md','docs/METHOD_MAP.md','docs/SOURCE_PROVENANCE.md','docs/REFERENCE_IMPLEMENTATION_SCOPE.md']:
+        assert (R/rel).is_file(),rel

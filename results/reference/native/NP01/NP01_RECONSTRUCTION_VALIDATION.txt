@@ -1,0 +1,18 @@
+ERP-MCDA benchmark — NP01 PRECOMPARISON VALIDATION
+
+Dimensions: 4 alternatives x 12 TOPSIS criteria — PASS
+Alternative IDs: A, B, C, D — PASS
+Criterion IDs: Cr1-Cr12 — PASS
+FAHP reciprocal triangular pairwise structure and unit diagonals — PASS
+Main FAHP weight sum: 1.000000000000000 — PASS
+Technical local weight sum: 1.000000000000000 — PASS
+Corporate local weight sum: 1.000000000000000 — PASS
+Financial local weight sum: 1.000000000000000 — PASS
+Global weight sum: 1.000000000000000 — PASS
+Benefit/cost directions: all 12 treated as benefit/desirability per source's explicit maximization statement — PASS
+Normalization equation: Euclidean vector normalization under Eq. (7) — PASS
+PIS/NIS: maxima/minima of weighted normalized columns — PASS
+Tie handling: exact terminal ties would be represented as tied sets; none observed — PASS
+NaN/inf: PASS
+Published terminal values were not referenced by this script.
+Robustness analyses are reproduced separately by the robustness modules.

@@ -1,0 +1,108 @@
+NP_ID,input_group,record_type,row_id,col_id,value,value_l,value_m,value_u,direction,source_file,source_locator,notes
+NP01,FAHP_MAIN,fuzzy_pairwise,Technical,Technical,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Technical,Corporate,,1,2,3,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Technical,Financial,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Corporate,Technical,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Corporate,Corporate,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Corporate,Financial,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Financial,Technical,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Financial,Corporate,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_MAIN,fuzzy_pairwise,Financial,Financial,,1,1,1,,NP01_Kilic_2014,"PDF p.7 (journal p.88), Table 2",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Functionality,Functionality,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Functionality,Compatibility,,2,3,4,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Functionality,Usability,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Functionality,Accessibility,,2,3,4,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Functionality,Security,,2,3,4,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Compatibility,Functionality,,0.25,0.3333333333333333,0.5,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Compatibility,Compatibility,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Compatibility,Usability,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Compatibility,Accessibility,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Compatibility,Security,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Usability,Functionality,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Usability,Compatibility,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Usability,Usability,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Usability,Accessibility,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Usability,Security,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Accessibility,Functionality,,0.25,0.3333333333333333,0.5,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Accessibility,Compatibility,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Accessibility,Usability,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Accessibility,Accessibility,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Accessibility,Security,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Security,Functionality,,0.25,0.3333333333333333,0.5,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Security,Compatibility,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Security,Usability,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Security,Accessibility,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_TECHNICAL,fuzzy_pairwise,Security,Security,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 3",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,References,References,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,References,Adequacy,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,References,After_sales,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,References,Know_how,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Adequacy,References,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Adequacy,Adequacy,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Adequacy,After_sales,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Adequacy,Know_how,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,After_sales,References,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,After_sales,Adequacy,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,After_sales,After_sales,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,After_sales,Know_how,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Know_how,References,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Know_how,Adequacy,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Know_how,After_sales,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_CORPORATE,fuzzy_pairwise,Know_how,Know_how,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 4",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,License,License,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,License,Consultancy,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,License,Maintenance,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Consultancy,License,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Consultancy,Consultancy,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Consultancy,Maintenance,,1,2,3,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Maintenance,License,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Maintenance,Consultancy,,0.3333333333333333,0.5,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,FAHP_FINANCIAL,fuzzy_pairwise,Maintenance,Maintenance,,1,1,1,,NP01_Kilic_2014,"PDF p.8 (journal p.89), Table 5",
+NP01,TOPSIS_DECISION,scalar,A,Cr1,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr1=Functionality; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr2,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr2=Compatibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr3,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr3=Usability; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr4,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr4=Accessibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr5,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr5=Security; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr6,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr6=References; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr7,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr7=Adequacy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr8,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr8=After_sales; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr9,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr9=Know_how; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr10,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr10=License; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr11,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr11=Consultancy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,A,Cr12,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr12=Maintenance; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr1,4,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr1=Functionality; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr2,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr2=Compatibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr3,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr3=Usability; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr4,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr4=Accessibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr5,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr5=Security; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr6,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr6=References; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr7,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr7=Adequacy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr8,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr8=After_sales; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr9,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr9=Know_how; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr10,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr10=License; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr11,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr11=Consultancy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,B,Cr12,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr12=Maintenance; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr1,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr1=Functionality; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr2,4,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr2=Compatibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr3,3,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr3=Usability; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr4,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr4=Accessibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr5,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr5=Security; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr6,3,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr6=References; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr7,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr7=Adequacy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr8,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr8=After_sales; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr9,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr9=Know_how; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr10,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr10=License; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr11,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr11=Consultancy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,C,Cr12,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr12=Maintenance; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr1,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr1=Functionality; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr2,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr2=Compatibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr3,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr3=Usability; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr4,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr4=Accessibility; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr5,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr5=Security; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr6,9,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr6=References; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr7,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr7=Adequacy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr8,7,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr8=After_sales; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr9,8,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr9=Know_how; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr10,6,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr10=License; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr11,5,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr11=Consultancy; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87
+NP01,TOPSIS_DECISION,scalar,D,Cr12,4,,,,benefit,NP01_Kilic_2014,"PDF p.9 (journal p.90), Table 12",Cr12=Maintenance; paper states Eq. (7) maximization normalization for the selection criteria on PDF p.6/journal p.87

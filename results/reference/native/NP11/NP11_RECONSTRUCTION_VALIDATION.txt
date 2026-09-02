@@ -1,0 +1,12 @@
+NP11 PRECOMPARISON VALIDATION
+primary ERP ranking engine: LFPP only; DEMATEL excluded under the documented source-defined ERP ranking scope — PASS
+criteria pairwise upper-triangle entries=15 expected=15 — PASS
+alternative pairwise entries=36 expected=36 — PASS
+triangular fuzzy invariants 0<l<=m<=u — PASS
+re-evaluated a45=(1,2,3) used; superseded first-evaluated (3,4,5) excluded — PASS
+criteria_weight_sum=1.000000000000 — PASS
+local_weight_sums — PASS
+lambda nonnegative — PASS
+NaN/inf check — PASS
+tie handling: descending total global weight; no reconstructed terminal tie — PASS
+terminal reconstruction checks completed under the documented source-defined ERP ranking scope — PASS

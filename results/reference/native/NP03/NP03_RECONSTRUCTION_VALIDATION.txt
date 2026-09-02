@@ -1,0 +1,14 @@
+ERP-MCDA benchmark — NP03 PRECOMPARISON VALIDATION
+
+D2 checkpoint dimensions: 15 criteria x 4 alternatives — PASS
+Alternative IDs: ERPsys1-ERPsys4 — PASS
+Criterion IDs: ERP01-ERP15 — PASS
+Published normalized weight sum: 1.000000000000000 — PASS
+Table-3 row Euclidean norms (expected near 1 because values are printed to four decimals): min=0.99996237, max=1.00007331 — PASS WITH PRINTED-PRECISION ROUNDING
+Benefit/cost directions: ERP03=cost from explicit 'Lower cost is generally considered'; ERP04 and all others=benefit in the primary literal interpretation — PASS / SOURCE AMBIGUITY RECORDED FOR ERP04
+Weighted normalization: t_ij=r_ij*w_j per Eq. (14) — PASS
+PIS/NIS and Euclidean distance equations: Eqs. (15)-(19) — PASS
+Tie handling: exact terminal ties would be represented as tied sets; none observed — PASS
+NaN/inf: PASS
+Published Table 4/Table 5 values were not referenced by this script.
+Robustness analyses are reproduced separately by the robustness modules.

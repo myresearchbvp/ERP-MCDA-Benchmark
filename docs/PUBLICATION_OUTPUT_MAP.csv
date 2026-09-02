@@ -1,0 +1,8 @@
+publication_object,generated_file,primary_reference
+Table 1,results/publication/table_1_benchmark_depth.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Table 2,results/publication/table_2_native_reconstruction.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Table 3,results/publication/table_3_integrated_robustness.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Figure 1,results/publication/figure_1_evidence_matrix.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Figure 2,results/publication/figure_2_terminal_weight_trajectories.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Figure S1,results/publication/figure_s1_single_criterion_deletion_summary.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution
+Figure S2,results/publication/figure_s2_np04_source_audit.csv,INTEGRATED_EVIDENCE_MATRIX plus documented source resolution

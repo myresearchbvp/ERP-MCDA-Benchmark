@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark, please cite the accompanying study and this repository."
+title: "ERP-MCDA Computational Reconstruction and Decision-Stability Benchmark"
+type: software
+authors:
+  - family-names: Bresfelean
+    given-names: Vasile Paul
+    orcid: "https://orcid.org/0000-0002-7240-6187"
+    email: "paul.bresfelean@econ.ubbcluj.ro"
+  - family-names: Johanyák
+    given-names: Zsolt Csaba
+    orcid: "https://orcid.org/0000-0001-9285-9178"
+  - family-names: Popa
+    given-names: Silviu Claudiu
+    orcid: "https://orcid.org/0009-0005-1062-3396"
+  - family-names: Chis
+    given-names: George Sebastian
+    orcid: "https://orcid.org/0009-0006-4106-781X"
+preferred-citation:
+  type: article
+  title: "Computational Reconstruction, Auditability, and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark"
+  authors:
+    - family-names: Bresfelean
+      given-names: Vasile Paul
+      orcid: "https://orcid.org/0000-0002-7240-6187"
+    - family-names: Johanyák
+      given-names: Zsolt Csaba
+      orcid: "https://orcid.org/0000-0001-9285-9178"
+    - family-names: Popa
+      given-names: Silviu Claudiu
+      orcid: "https://orcid.org/0009-0005-1062-3396"
+    - family-names: Chis
+      given-names: George Sebastian
+      orcid: "https://orcid.org/0009-0006-4106-781X"

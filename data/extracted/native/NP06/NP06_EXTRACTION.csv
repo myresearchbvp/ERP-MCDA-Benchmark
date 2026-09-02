@@ -1,0 +1,87 @@
+input_group,alternative,criterion,cluster,value,parameter,source_file,locator,note
+subcriterion_weight,,C11,VRC,0.138,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C12,VRC,0.473,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C13,VRC,0.065,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C14,VRC,0.235,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C15,VRC,0.045,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C16,VRC,0.044,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C21,CRC,0.422,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C22,CRC,0.049,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C23,CRC,0.202,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C24,CRC,0.327,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C31,SRC,0.099,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C32,SRC,0.276,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C33,SRC,0.238,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C34,SRC,0.159,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C35,SRC,0.126,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+subcriterion_weight,,C36,SRC,0.102,,NP06_Gurbuz_2012,"PDF p7 (article p212), Table 6",Normalized sub-criterion weight from ANP limit supermatrix
+alternative_subcriterion_performance,A1,C11,VRC,0.692,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C12,VRC,0.929,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C13,VRC,0.786,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C14,VRC,0.923,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C15,VRC,0.929,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C16,VRC,0.929,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C21,CRC,0.214,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C22,CRC,0.625,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C23,CRC,0.625,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C24,CRC,0.786,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C31,SRC,0.714,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C32,SRC,0.857,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C33,SRC,0.067,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C34,SRC,0.867,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C35,SRC,0.8,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A1,C36,SRC,0.133,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C11,VRC,0.462,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C12,VRC,0.786,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C13,VRC,0.571,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C14,VRC,0.769,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C15,VRC,0.786,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C16,VRC,0.786,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C21,CRC,0.429,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C22,CRC,0.813,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C23,CRC,0.813,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C24,CRC,0.643,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C31,SRC,0.929,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C32,SRC,0.714,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C33,SRC,0.267,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C34,SRC,0.733,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C35,SRC,0.667,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A2,C36,SRC,0.267,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C11,VRC,0.231,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C12,VRC,0.571,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C13,VRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C14,VRC,0.308,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C15,VRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C16,VRC,0.571,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C21,CRC,0.643,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C22,CRC,0.563,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C23,CRC,0.563,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C24,CRC,0.5,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C31,SRC,0.5,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C32,SRC,0.5,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C33,SRC,0.533,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C34,SRC,0.467,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C35,SRC,0.4,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A3,C36,SRC,0.533,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C11,VRC,0.923,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C12,VRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C13,VRC,0.929,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C14,VRC,0.538,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C15,VRC,0.571,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C16,VRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C21,CRC,0.857,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C22,CRC,0.188,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C23,CRC,0.188,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C24,CRC,0.214,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C31,SRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C32,SRC,0.286,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C33,SRC,0.8,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C34,SRC,0.267,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C35,SRC,0.2,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+alternative_subcriterion_performance,A4,C36,SRC,0.8,,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 8",MACBETH-derived performance value
+choquet_parameter,,,,0.4375,phi1,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
+choquet_parameter,,,,0.2083,phi2,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
+choquet_parameter,,,,0.3542,phi3,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
+choquet_parameter,,,,0.0417,I12,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
+choquet_parameter,,,,0.0,I13,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
+choquet_parameter,,,,0.0417,I23,NP06_Gurbuz_2012,"PDF p8 (article p213), Table 7",Shapley index or pairwise interaction
