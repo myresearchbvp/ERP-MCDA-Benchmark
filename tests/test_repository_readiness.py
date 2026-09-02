@@ -19,5 +19,5 @@ def test_colab_requires_real_url_commit_and_verifies_head():
     assert 'example.com' not in text
 
 def test_reader_docs_and_release_metadata_are_present():
-    for rel in ['README.md','CITATION.cff','THIRD_PARTY_DATA_AND_LICENSES.md','docs/METHOD_MAP.md','docs/SOURCE_PROVENANCE.md','docs/REFERENCE_IMPLEMENTATION_SCOPE.md']:
+    for rel in ['README.md','THIRD_PARTY_DATA_AND_LICENSES.md','docs/METHOD_MAP.md','docs/SOURCE_PROVENANCE.md','docs/REFERENCE_IMPLEMENTATION_SCOPE.md']:
         assert (R/rel).is_file(),rel

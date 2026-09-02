@@ -71,15 +71,10 @@ The repository does not redistribute article PDFs, publisher supplementary workb
 
 `data/provenance/CASE_SOURCE_MAP.csv` records the sources and DOI or stable locators used for each case. `data/provenance/SOURCE_MANIFEST_SHA256.csv` records source-file hashes. Further details are in `docs/SOURCE_PROVENANCE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md`.
 
+
 ## Citation
 
-Please cite the repository using `CITATION.cff`. When using the benchmark in scholarly work, please also cite the accompanying study:
-
-*Computational Reconstruction, Auditability, and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark*
-
-Vasile Paul Bresfelean, Zsolt Csaba Johanyák, Silviu Claudiu Popa and George Sebastian Chis
-
-Correspondence: `paul.bresfelean@econ.ubbcluj.ro`
+> *If you use this repository, please cite the accompanying article once it is published. Full citation details will be added here after publication.*
 
 ## License
 

@@ -16,7 +16,7 @@ def test_no_cache_archive_or_third_party_source_binary_pollution():
 def test_required_repository_metadata_and_single_notebook():
     notebooks=list((R/'notebooks').glob('*.ipynb'))
     assert [p.name for p in notebooks]==['full_reproduction_colab.ipynb']
-    for rel in ['README.md','CITATION.cff','LICENSE','LICENSES/CC-BY-4.0.txt','LICENSES/CONTENT_LICENSE_SCOPE.md','.gitignore','.github/workflows/ci.yml','data/provenance/CASE_SOURCE_MAP.csv','data/provenance/SOURCE_MANIFEST_SHA256.csv']:
+    for rel in ['README.md','LICENSE','LICENSES/CC-BY-4.0.txt','LICENSES/CONTENT_LICENSE_SCOPE.md','.gitignore','.github/workflows/ci.yml','data/provenance/CASE_SOURCE_MAP.csv','data/provenance/SOURCE_MANIFEST_SHA256.csv']:
         assert (R/rel).is_file(), rel
 
 def test_repo_relative_scientific_locators_resolve():

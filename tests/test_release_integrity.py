@@ -33,7 +33,7 @@ def test_scientific_checksum_scope():
         digest, rel=line.split('  ',1)
         assert len(digest)==64 and (R/rel).is_file(), rel
         entries.append(rel)
-    excluded={'README.md','CITATION.cff','LICENSE','THIRD_PARTY_DATA_AND_LICENSES.md','.gitignore'}
+    excluded={'README.md','LICENSE','THIRD_PARTY_DATA_AND_LICENSES.md','.gitignore'}
     excluded_prefixes=('LICENSES/','docs/','.github/','notebooks/','tests/')
     assert not any(rel in excluded or rel.startswith(excluded_prefixes) for rel in entries)
     assert any(rel.startswith('data/') for rel in entries)
