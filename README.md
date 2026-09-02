@@ -1,92 +1,79 @@
 # ERP-MCDA Computational Reconstruction and Decision-Stability Benchmark
 
-This repository contains the computational material for a twelve-case benchmark of published ERP multi-criteria decision-analysis (MCDA) studies. It reconstructs published rankings when the public source material allows this, examines decision stability under terminal-weight changes and single-criterion deletion, reproduces the source-defined sensitivity analyses for NP04 and NP12 and rebuilds the data used in the study's tables and figures.
+This repository accompanies the study *Computational Reconstruction, Auditability, and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark*.
 
-## Benchmark
+It contains the data and Python code used to reconstruct published ERP multi-criteria decision-analysis (MCDA) results and examine how stable the reported decisions are when criterion weights or individual criteria are changed.
 
-The benchmark covers twelve ERP-MCDA cases, NP01-NP12. Nine can be evaluated at the terminal stage from the documented public source chain.
+## What is included
 
-`NE` means not evaluable or not applicable under the stated source and method conditions. It does not mean that a robustness test produced a negative result.
+The benchmark covers twelve published ERP-MCDA cases (NP01-NP12). Nine can be reconstructed at the terminal ranking stage from the available source material. The repository also includes:
 
-The case structure is summarised in:
+- terminal-weight perturbation analysis
+- single-criterion deletion analysis
+- the source-defined sensitivity analyses for NP04 and NP12
+- the machine-readable files used for Tables 1-3 and Figures 1, 2, S1 and S2
+- provenance records for the source material used in each case
 
-- `docs/BENCHMARK_AND_LINEAGE_MAP.csv`
-- `docs/KNOWN_NE_AND_LIMITATIONS.md`
-- `docs/METHOD_MAP.md`
+`NE` means that a calculation is not evaluable or not applicable under the stated source and method conditions. Details are given in `docs/KNOWN_NE_AND_LIMITATIONS.md`.
 
-## Quick check
+## Run the code
 
-Install the dependencies and run:
+Install the dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+```
+
+For a quick check:
+
+```bash
 python src/pipeline/reproduce_all.py --mode quick --output-dir reproduced_quick
 ```
 
-Quick mode checks repository integrity and a compact computational route. It is not the full reproduction.
-
-## Full reproduction
+For the full reproduction:
 
 ```bash
 python src/pipeline/reproduce_all.py --mode full --output-dir reproduced
 ```
 
-Full mode verifies the scientific checksums, reruns the nine evaluable native baselines, regenerates 650,000 terminal-weight perturbation rows, executes the 118 applicable single-criterion deletion operations, retains the stated `NE` records, recomputes the NP04 and NP12 sensitivity analyses and rebuilds the publication-source CSV files.
+The full run reconstructs the evaluable cases, regenerates the robustness analyses and rebuilds the publication data files. The main run reports are written to `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` in the output directory.
 
-The main diagnostics are written to:
+## Google Colab
 
-- `reproduced/PARITY_REPORT.csv`
-- `reproduced/PUBLICATION_PARITY.csv`
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Benchmark/blob/main/notebooks/full_reproduction_colab.ipynb)
 
-`checksums.sha256` covers only the computational scientific assets used by the reproduction pipeline. The README, citation file, licence files, documentation, tests and Colab notebook are outside this scientific checksum.
+For a browser-based run, open the notebook above and run its cells in order.
 
-## Tested environment
+## Repository structure
 
-The reference environment is recorded in `environment-lock.yml`:
+- `data/` - extracted, standardised and provenance data
+- `src/` - reconstruction and robustness code
+- `results/reference/` - reference results used by the reproduction pipeline
+- `results/publication/` - data used for the paper's tables and figures
+- `docs/` - method notes, provenance information and benchmark documentation
+- `notebooks/` - Google Colab entry point
+- `tests/` - automated checks
+
+## Environment
+
+The reference environment is recorded in `environment-lock.yml` and uses:
 
 - Python 3.13.5
 - NumPy 2.3.5
 - SciPy 1.17.0
 - pytest 9.0.2
 
-`requirements-lock.txt` pins the direct Python dependencies.
+`requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
 
-With Conda:
+## Source material
 
-```bash
-conda env create -f environment-lock.yml
-conda activate erp-mcda-repro
-```
+The repository does not redistribute article PDFs, publisher supplementary workbooks or other third-party source files.
 
-Or from an existing Python 3.13.5 environment:
-
-```bash
-python -m pip install -r requirements-lock.txt
-```
-
-## Publication data
-
-`results/publication/` contains the seven machine-readable files used for Tables 1-3 and Figures 1, 2, S1 and S2. The full pipeline regenerates these files and checks their values against the reference results in the repository.
-
-## Google Colab
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Benchmark/blob/main/notebooks/full_reproduction_colab.ipynb)
-
-The notebook provides the hosted full-reproduction route. It is pinned to the public commit that passed the repository's reproducibility workflow.
-
-Runtime notes are available in `docs/COLAB_RUNTIME_COMPATIBILITY.md`.
-
-## Provenance and third-party material
-
-The repository does not redistribute article PDFs, publisher supplementary workbooks or other third-party source binaries.
-
-`data/provenance/CASE_SOURCE_MAP.csv` records source identities and DOI or stable locators. `data/provenance/SOURCE_MANIFEST_SHA256.csv` records source-file hashes. Extracted factual records required for the benchmark are stored under `data/`. Reference results used for computational verification are stored under `results/reference/`.
-
-See `docs/SOURCE_PROVENANCE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md` for details.
+`data/provenance/CASE_SOURCE_MAP.csv` records the sources and DOI or stable locators used for each case. `data/provenance/SOURCE_MANIFEST_SHA256.csv` records source-file hashes. Further details are in `docs/SOURCE_PROVENANCE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md`.
 
 ## Citation
 
-Please cite this repository using `CITATION.cff` and cite the accompanying study when using the benchmark in scholarly work:
+Please cite the repository using `CITATION.cff`. When using the benchmark in scholarly work, please also cite the accompanying study:
 
 *Computational Reconstruction, Auditability, and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark*
 
@@ -94,16 +81,10 @@ Vasile Paul Bresfelean, Zsolt Csaba Johanyák, Silviu Claudiu Popa and George Se
 
 Correspondence: `paul.bresfelean@econ.ubbcluj.ro`
 
-## Licence
+## License
 
-Original repository code is licensed under the MIT License in `LICENSE`.
+The original code in this repository is licensed under the MIT License.
 
-Original repository documentation and original project-generated outputs or data are licensed under CC BY 4.0 only where the authors have the right to grant that licence. See `LICENSES/CC-BY-4.0.txt` and `LICENSES/CONTENT_LICENSE_SCOPE.md`.
+Original documentation and project-generated outputs or data are licensed under CC BY 4.0 only where the authors have the right to grant that licence. Third-party publications, publisher supplements and other third-party material are not relicensed by this repository.
 
-Third-party publications, publisher supplements and other third-party material are not relicensed by this repository.
-
-## Further documentation
-
-- `docs/REPRODUCIBILITY_SCOPE.md`
-- `docs/REFERENCE_IMPLEMENTATION_SCOPE.md`
-- `docs/SOURCE_PROVENANCE.md`
+See `LICENSE`, `LICENSES/CC-BY-4.0.txt`, `LICENSES/CONTENT_LICENSE_SCOPE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md` for details.

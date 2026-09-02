@@ -7,7 +7,7 @@ def test_reader_scientific_scope_and_paths():
     assert text.startswith('# ERP-MCDA Computational Reconstruction and Decision-Stability Benchmark')
     assert 'terminal-weight perturbation' in text
     assert 'single-criterion deletion' in text
-    assert 'source-defined native sensitivity' in text
+    assert 'source-defined sensitivity analyses for NP04 and NP12' in text
     assert (R/'src/reference_implementations').is_dir()
 
 def test_single_criterion_reference_note_semantics():
@@ -18,7 +18,10 @@ def test_single_criterion_reference_note_semantics():
 def test_colab_notebook_fails_closed_on_exact_commit():
     nb=json.loads((R/'notebooks/full_reproduction_colab.ipynb').read_text(encoding='utf-8'))
     text='\n'.join(''.join(c.get('source',[])) for c in nb.get('cells',[]))
-    assert 'REPOSITORY_URL = ""' in text and 'EXACT_COMMIT = ""' in text
+    assert 'REPOSITORY_URL = "https://github.com/myresearchbvp/ERP-MCDA-Benchmark.git"' in text
+    import re
+    m=re.search(r'EXACT_COMMIT = \"([0-9a-f]{40})\"', text)
+    assert m, 'Colab notebook must pin a 40-character Git commit'
     assert 'if not REPOSITORY_URL or not EXACT_COMMIT' in text
     assert '["git", "checkout", EXACT_COMMIT]' in text
     assert 'HEAD mismatch' in text
