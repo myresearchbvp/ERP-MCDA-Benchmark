@@ -1,0 +1,13 @@
+NP_ID,single_criterion_deletion_applicability,operation_type,applicable_deletion_count,winner_or_recommendation_retention_share,winner_or_recommendation_critical_deletions,branch_configuration_caveat
+NP01,APPLICABLE,NATIVE_REWEIGHTING_AFTER_DELETION,12,0.916666666666667,1,
+NP02,APPLICABLE,NATIVE_REWEIGHTING_AFTER_DELETION,5,0.8,1,
+NP03,APPLICABLE,TERMINAL_POSTWEIGHT_DELETION,15 unique criteria × 2 prospectively paired branches,primary=1; parallel=0.666666666666667,primary=0; parallel=5,two branches reported separately; no pooled denominator and no source-direction resolution from the single-criterion deletion analysis
+NP04,APPLICABLE,TERMINAL_POSTWEIGHT_DELETION,12,0.916666666666667,1,
+NP05,APPLICABLE_WITH_C6_NE,NATIVE_REWEIGHTING_AFTER_DELETION,5 unique criteria × 6 co-primary configurations; C6 NE,median_across_configs=1; range=1..1,median_across_configs=0; range=0..0,all six co-primary; descriptive across configurations only; no pooled denominator/selection of most stable
+NP06,NE,NE,0,NE,NE,reduced Choquet capacity not defensible
+NP07,APPLICABLE,TERMINAL_POSTWEIGHT_DELETION,11,0.636363636363636,4,NP07 counts Kılıç 2015 executable baseline only
+NP08,NE,NE,0,NE,NE,no terminally unique baseline
+NP09,NE,NE,0,NE,NE,literal native chain nonfinite
+NP10,NE,NE,0,NE,NE,D0 source limitation; Qb/Qn map + S1–S6 unavailable
+NP11,NE,NE,0,NE,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL
+NP12,APPLICABLE,TERMINAL_POSTWEIGHT_DELETION,18,1,0,native VIKOR recommendation set at q/v=0.5 is primary; top-Q leader secondary

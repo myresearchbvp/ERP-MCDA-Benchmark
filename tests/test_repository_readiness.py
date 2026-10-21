@@ -6,15 +6,15 @@ def notebook_text():
     nb=json.loads((R/'notebooks/full_reproduction_colab.ipynb').read_text(encoding='utf-8'))
     return '\n'.join(''.join(c.get('source',[])) for c in nb.get('cells',[]))
 
-def test_colab_requires_real_url_commit_and_verifies_head():
+def test_colab_pins_scientific_manifest_and_records_head():
     text=notebook_text()
     assert 'REPOSITORY_URL = "https://github.com/myresearchbvp/ERP-MCDA-Benchmark.git"' in text
-    m=re.search(r'EXACT_COMMIT = \"([0-9a-f]{40})\"', text)
-    assert m, 'Colab notebook must pin a 40-character Git commit'
-    assert 'if not REPOSITORY_URL or not EXACT_COMMIT' in text
-    assert '["git", "checkout", EXACT_COMMIT]' in text
+    m=re.search(r'EXPECTED_MANIFEST_SHA256 = \"([0-9a-f]{64})\"', text)
+    assert m, 'Colab notebook must pin the 64-character scientific manifest SHA-256'
+    assert 'if not REPOSITORY_URL or not REVISION or not EXPECTED_MANIFEST_SHA256' in text
+    assert '["git", "checkout", REVISION]' in text
     assert '["git", "rev-parse", "HEAD"]' in text
-    assert '["git", "rev-parse", EXACT_COMMIT]' in text
+    assert '["git", "rev-parse", REVISION]' in text
     assert 'HEAD mismatch' in text
     assert 'example.com' not in text
 

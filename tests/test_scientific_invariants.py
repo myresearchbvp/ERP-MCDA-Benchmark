@@ -41,12 +41,12 @@ def test_terminal_weight_perturbation_reference_and_lineage_semantics():
 def test_single_criterion_deletion_exact_denominators_and_ne_semantics():
     a=evidence_matrix(); pre={n for n,r in a.items() if r['Single_criterion_deletion_preflight'].startswith('APPLICABLE')}
     result={n for n,r in a.items() if r['Single_criterion_deletion_execution_status'].startswith('RESULT-PRODUCING')}
-    assert len(pre)==8 and len(result)==7 and 'NP11' in pre and 'NP11' not in result
+    assert len(pre)==8 and len(result)==8 and 'NP11' in pre and 'NP11' in result
     spec=read('data/standardized/robustness/R2C/R2C_EXECUTION_SPEC.csv')
-    assert sum(r['applicability']=='APPLICABLE' for r in spec)==118
-    assert sum(r['applicability']=='NE' for r in spec)==47
+    assert sum(r['applicability']=='APPLICABLE' for r in spec)==124
+    assert sum(r['applicability']=='NE' for r in spec)==41
     assert a['NP11']['Single_criterion_deletion_preflight']=='APPLICABLE AT PREFLIGHT'
-    assert a['NP11']['Single_criterion_deletion_execution_status'].startswith('NE UNDER')
+    assert a['NP11']['Single_criterion_deletion_execution_status']=='RESULT-PRODUCING (NP11 POST HOC EXTENSION)'
     np05=[r for r in spec if r['NP_ID']=='NP05' and r.get('deleted_criterion')=='C6']
     assert len(np05)==6 and all(r['applicability']=='NE' for r in np05)
 

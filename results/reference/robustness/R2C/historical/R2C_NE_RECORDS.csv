@@ -1,0 +1,48 @@
+NP_ID,configuration_or_branch,deleted_criterion,status,reason,source_checkpoint
+NP05,p-HFC_CE-I_Hamming,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP05,p-HFC_CE-I_Euclidean,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP05,p-HFC_CE-I_Hausdorff,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP05,p-HFC_CE-II_Hamming,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP05,p-HFC_CE-II_Euclidean,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP05,p-HFC_CE-II_Hausdorff,C6,NE,sole cost criterion; deletion makes native COPRAS cost-side formula undefined,data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv
+NP06,NP06_NE,VRC,NE,Single-criterion deletion NE: no defensible reduced Choquet capacity; interaction-off comparison reserved for source-defined sensitivity,results/reference/native/NP06/NP06_COMPUTED_OUTPUTS_PRECOMPARISON.csv
+NP06,NP06_NE,CRC,NE,Single-criterion deletion NE: no defensible reduced Choquet capacity; interaction-off comparison reserved for source-defined sensitivity,results/reference/native/NP06/NP06_COMPUTED_OUTPUTS_PRECOMPARISON.csv
+NP06,NP06_NE,SRC,NE,Single-criterion deletion NE: no defensible reduced Choquet capacity; interaction-off comparison reserved for source-defined sensitivity,results/reference/native/NP06/NP06_COMPUTED_OUTPUTS_PRECOMPARISON.csv
+NP08,NP08_NE,c1,NE,no terminally unique LP solution/tie-break baseline,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP08,NP08_NE,c2,NE,no terminally unique LP solution/tie-break baseline,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP08,NP08_NE,c3,NE,no terminally unique LP solution/tie-break baseline,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP08,NP08_NE,c4,NE,no terminally unique LP solution/tie-break baseline,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi11,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi12,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi13,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi14,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi15,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi21,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi22,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi23,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi24,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi31,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi32,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP09,NP09_NE,Xi33,NE,literal native chain becomes nonfinite before terminal output,docs/KNOWN_NE_AND_LIMITATIONS.md
+NP10,NP10_NE,C1,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C2,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C3,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C4,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C5,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C6,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C7,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C8,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C9,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C10,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C11,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C12,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C13,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C14,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C15,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP10,NP10_NE,C16,NE,source limitation: the operative Qb/Qn cost/benefit map is not uniquely provided and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline is defined (D0/O3),results/reference/resolved/NP10_D_O_SOURCE_RESOLUTION.csv
+NP11,LFPP_REDUCED_CRITERIA,C1,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule
+NP11,LFPP_REDUCED_CRITERIA,C2,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule
+NP11,LFPP_REDUCED_CRITERIA,C3,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule
+NP11,LFPP_REDUCED_CRITERIA,C4,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule
+NP11,LFPP_REDUCED_CRITERIA,C5,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule
+NP11,LFPP_REDUCED_CRITERIA,C6,NE,NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL,data/standardized/runtime/R1D/NP11/NP11_EXTRACTION.csv criteria fuzzy matrix + prespecified single-criterion deletion execution rule

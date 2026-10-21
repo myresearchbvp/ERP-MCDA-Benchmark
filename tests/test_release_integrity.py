@@ -12,18 +12,18 @@ def test_reader_scientific_scope_and_paths():
 
 def test_single_criterion_reference_note_semantics():
     text=(R/'results/reference/robustness/R2C/R2C_CASE_METHOD_NOTES.txt').read_text(encoding='utf-8')
-    assert 'Total executed deletion-outcome rows=118' in text
-    assert 'prespecified execution rule' in text
+    assert 'Total executed deletion-outcome rows=124' in text
+    assert 'post hoc' in text and 'C6 changes S4 to S3' in text
 
-def test_colab_notebook_fails_closed_on_exact_commit():
+def test_colab_notebook_fails_closed_on_scientific_identity():
     nb=json.loads((R/'notebooks/full_reproduction_colab.ipynb').read_text(encoding='utf-8'))
     text='\n'.join(''.join(c.get('source',[])) for c in nb.get('cells',[]))
     assert 'REPOSITORY_URL = "https://github.com/myresearchbvp/ERP-MCDA-Benchmark.git"' in text
     import re
-    m=re.search(r'EXACT_COMMIT = \"([0-9a-f]{40})\"', text)
-    assert m, 'Colab notebook must pin a 40-character Git commit'
-    assert 'if not REPOSITORY_URL or not EXACT_COMMIT' in text
-    assert '["git", "checkout", EXACT_COMMIT]' in text
+    m=re.search(r'EXPECTED_MANIFEST_SHA256 = \"([0-9a-f]{64})\"', text)
+    assert m, 'Colab notebook must pin the 64-character scientific manifest SHA-256'
+    assert 'if not REPOSITORY_URL or not REVISION or not EXPECTED_MANIFEST_SHA256' in text
+    assert '["git", "checkout", REVISION]' in text
     assert 'HEAD mismatch' in text
 
 def test_scientific_checksum_scope():

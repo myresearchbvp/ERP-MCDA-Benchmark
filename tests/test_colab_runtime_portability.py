@@ -32,7 +32,7 @@ def test_np11_hosted_equivalence_is_scoped(tmp_path):
 
 def test_public_colab_uses_runtime_adapter_and_exact_commit():
     src=notebook_text()
-    assert 'EXACT_COMMIT' in src and 'REPOSITORY_URL' in src
+    assert 'EXPECTED_MANIFEST_SHA256' in src and 'REPOSITORY_URL' in src
     assert 'prepare_runtime' in src and 'run_full_reproduction' in src
     assert 'REPRODUCTION_FAILURE' in src
 

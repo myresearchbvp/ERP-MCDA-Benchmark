@@ -1,6 +1,6 @@
 # Colab runtime compatibility
 
-The canonical deterministic reference remains unchanged: Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0, and pytest 9.0.2. `environment-lock.yml` records the Python reference and `requirements-lock.txt` records the exact direct Python dependency versions.
+The canonical deterministic reference remains unchanged: Python 3.13.5, NumPy 2.3.5, SciPy 1.17.0, and pytest 9.0.2. NP11 also requires Clarabel 0.11.1, OSQP 1.1.3, SymPy 1.14.0 and mpmath 1.3.0. `environment-lock.yml` records the Python reference and `requirements-lock.txt` records the exact direct Python dependency versions.
 
 Google Colab controls both the host image and the CPU/BLAS execution backend. The notebooks therefore use `src/pipeline/colab_runtime.py` to create an isolated runtime and then execute FULL reproduction through the explicit `hosted-colab` parity profile.
 
@@ -14,7 +14,7 @@ The canonical reference route remains byte-strict. The hosted Colab profile is n
 
 - `NP11_COMPUTED_OUTPUTS_PRECOMPARISON.csv`: identical schema/order/system IDs/ranks/winner; finite numeric values within absolute tolerance `1e-6`.
 - `NP11_CALCULATED_INTERMEDIATES.csv`: identical schema/order/stage/basis/item/metric labels; finite numeric values within absolute tolerance `1e-6`.
-- `R2C_DELETION_LEVEL_RESULTS.csv`: every field is exact except parsed numeric values inside `terminal_score_vector`, which must remain within absolute tolerance `1e-9`; all winner/recommendation/status/order fields remain exact.
+- `R2C_DELETION_LEVEL_RESULTS.csv` (current and historical): every field is exact except parsed numeric values inside `terminal_score_vector`, which must remain within absolute tolerance `1e-9`; all winner/recommendation/status/order fields remain exact.
 - `NP11_RECONSTRUCTION_VALIDATION.txt` remains exact where hardware-independent.
 
 Every other native, robustness, source-resolution, publication, denominator, checksum, and source-reference consistency check remains unchanged and strict. A mismatch outside these exact fields is a hard failure.
@@ -31,3 +31,7 @@ These are runtime-portability equivalence checks, not scientific fallbacks. They
 The runtime adapter streams subprocess output. On failure it prints the return code, available `PARITY_REPORT.csv` non-PASS rows, expected and observed hashes when available, and the retained pipeline output tail. A mismatch beyond a declared tolerance, any rank/winner/status change, or any mismatch elsewhere remains a hard failure.
 
 A live hosted Colab execution is a separate runtime validation step. Local simulation of the hosted profile and static notebook checks do not by themselves constitute a live Colab execution.
+
+The notebook checks the SHA-256 of the complete scientific checksum manifest before executing code from the cloned release. It resolves `main` to an exact commit and records that commit. This prevents the notebook from silently selecting the older, pre-NP11 release without inventing a future commit hash. The manifest excludes the notebook itself, avoiding a circular content identity.
+
+NP11 deletion uses three fresh solver checks in full mode and exact saved-proof verification in both modes. Its certified ranks, input identities and pairwise signs have no floating-tolerance exception. The expensive construction of new rational witnesses is unnecessary for replaying valid saved certificates.

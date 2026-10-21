@@ -9,9 +9,9 @@ It contains the data and Python code used to reconstruct published ERP multi-cri
 The benchmark covers twelve published ERP-MCDA cases (NP01-NP12). Nine can be reconstructed at the terminal ranking stage from the available source material. The repository also includes:
 
 - terminal-weight perturbation analysis
-- single-criterion deletion analysis
+- single-criterion deletion analysis, including six post hoc NP11 deletions
 - the source-defined sensitivity analyses for NP04 and NP12
-- the machine-readable files used for Tables 1-3 and Figures 1, 2, S1 and S2
+- machine-readable data for Tables 1-3 and Figures 1 and 2, plus additional deletion and source-sensitivity diagnostics
 - provenance records for the source material used in each case
 
 `NE` means that a calculation is not evaluable or not applicable under the stated source and method conditions. Details are given in `docs/KNOWN_NE_AND_LIMITATIONS.md`.
@@ -21,28 +21,40 @@ The benchmark covers twelve published ERP-MCDA cases (NP01-NP12). Nine can be re
 Install the dependencies:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-lock.txt
 ```
 
-For a quick check:
+For a quick check of selected baselines, NP11 mathematical certificates and publication data:
 
 ```bash
-python src/pipeline/reproduce_all.py --mode quick --output-dir reproduced_quick
+python src/pipeline/reproduce_all.py --mode quick --output-dir reproduced_quick --runtime-profile hosted-colab
 ```
 
 For the full reproduction:
 
 ```bash
-python src/pipeline/reproduce_all.py --mode full --output-dir reproduced
+python src/pipeline/reproduce_all.py --mode full --output-dir reproduced --runtime-profile hosted-colab
 ```
 
-The full run reconstructs the evaluable cases, regenerates the robustness analyses and rebuilds the publication data files. The main run reports are written to `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` in the output directory.
+The full run reconstructs the evaluable cases, regenerates the robustness analyses, recalculates NP11 with three solvers, verifies its saved rational/interval certificates and rebuilds the publication data files. The main run reports are written to `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` in the output directory.
 
 ## Google Colab
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Benchmark/blob/main/notebooks/full_reproduction_colab.ipynb)
 
-For a browser-based run, open the notebook above and run its cells in order.
+For a browser-based run, open the notebook above and run its cell. It verifies the scientific manifest before running and records the resolved Git commit. It rejects older repository content.
+
+## NP11 criterion deletion
+
+All eight applicable lineages have evaluable deletion results. NP11 retains the baseline winner in 5/6 deletions and the complete ranking in 3/6. Removing C6 changes the winner from S4 to S3. The six NP11 rows are labeled post hoc; the other 118 outcomes retain their original values. These are diagnostic-specific finite shares, not pooled robustness probabilities.
+
+The current R2C outputs are under `results/reference/robustness/R2C/`. Its `historical/` directory retains the original 118-row analysis and NP11 nonexecution records for traceability. These historical records are not a competing set of current results. See `docs/NP11_CRITERION_DELETION.md` for the model and certificates.
+
+Run the automated checks with:
+
+```bash
+python -m pytest -q -p no:cacheprovider
+```
 
 ## Repository structure
 
@@ -62,8 +74,9 @@ The reference environment is recorded in `environment-lock.yml` and uses:
 - NumPy 2.3.5
 - SciPy 1.17.0
 - pytest 9.0.2
+- Clarabel 0.11.1, OSQP 1.1.3, SymPy 1.14.0 and mpmath 1.3.0 for NP11 certification
 
-`requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
+The integrated release was also executed on Python 3.12.14 with the same dependency lock and the existing hosted-runtime equivalence profile. `requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
 
 ## Source material
 

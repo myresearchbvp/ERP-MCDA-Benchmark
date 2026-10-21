@@ -7,6 +7,7 @@ sys.path.insert(0,str(REPO/'src'))
 from pipeline.verify_reference import verify_checksum_manifest,compare_files,csv_rows,sha256
 from portable.native_runner import run_case,CANONICAL
 from portable.r2c_public_reproduction import reproduce as reproduce_r2c
+from portable.np11_certified_deletion import reproduce as reproduce_np11
 from portable.r2d_public_reproduction import reproduce_primary as reproduce_r2d_primary
 from pipeline.build_publication_tables import build as build_tables
 from pipeline.build_figure_source_data import build as build_figures
@@ -100,10 +101,15 @@ def r2c_full(out,rows,runtime_profile='strict-byte'):
     observed_note=(od/'R2C_CASE_METHOD_NOTES.txt').read_text(encoding='utf-8')
     require(rows,'r2c_reader_note_parity','method_note_parity',observed_note==expected_note,'reader-facing note matches the documented scientific reference')
     d=csv_rows(od/'R2C_DELETION_LEVEL_RESULTS.csv'); ne=csv_rows(od/'R2C_NE_RECORDS.csv'); spec=csv_rows(REPO/'data/standardized/robustness/R2C/R2C_EXECUTION_SPEC.csv')
-    require(rows,'r2c_design_count','executed_deletion_rows',len(d)==118,f'observed={len(d)} expected=118')
-    require(rows,'r2c_design_count','spec_applicable_rows',sum(x['applicability']=='APPLICABLE' for x in spec)==118,'expected 118 applicable rows')
-    require(rows,'r2c_design_count','spec_NE_rows',sum(x['applicability']=='NE' for x in spec)==47,'expected 47 NE rows')
-    n11=[x for x in ne if x['NP_ID']=='NP11']; require(rows,'r2c_ne_semantics','NP11_preflight_to_execution_NE',len(n11)==6 and all(x['reason']=='NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL' for x in n11),'six NP11 C1-C6 NE records, no fallback solver')
+    require(rows,'r2c_design_count','executed_deletion_rows',len(d)==124,f'observed={len(d)} expected=124')
+    require(rows,'r2c_design_count','spec_applicable_rows',sum(x['applicability']=='APPLICABLE' for x in spec)==124,'expected 124 applicable rows (118 original + 6 post hoc)')
+    require(rows,'r2c_design_count','spec_NE_rows',sum(x['applicability']=='NE' for x in spec)==41,'expected 41 current NE rows')
+    n11=[x for x in d if x['NP_ID']=='NP11']; require(rows,'r2c_post_hoc','NP11_six_certified_deletions',len(n11)==6 and sum(x['baseline_winner_retained']=='YES' for x in n11)==5 and sum(x['baseline_complete_ranking_retained']=='True' for x in n11)==3 and not any(x['NP_ID']=='NP11' for x in ne),'six tagged post hoc outcomes; 5/6 winner and 3/6 ranking retention; no current NP11 NE')
+    for historic in (REPO/'results/reference/robustness/R2C/historical').iterdir():
+        if historic.is_file():
+            report=_compare_r2c_file(od/'historical'/historic.name,historic,historic.name,runtime_profile)
+            report['gate']='historical_r2c_parity';rows.append(report)
+            if report['status']!='PASS':raise RuntimeError('Historical R2C parity '+historic.name)
     return od
 
 def r2d_full(out,rows):
@@ -135,7 +141,7 @@ def source_resolution_checks(rows):
     require(rows,'source_resolution_consistency','NP08_final_NE',auth['NP08']['Native_evaluability']=='NOT_TERMINALLY_EVALUABLE' and auth['NP08']['Native_reconstruction']=='NE under documented source resolution','NP08 source-resolved terminal NE retained')
     require(rows,'source_resolution_consistency','NP09_final_NE',auth['NP09']['Native_evaluability']=='NOT_EVALUABLE_LITERAL_METHOD_NONFINITE' and auth['NP09']['Native_reconstruction']=='NE under documented source resolution','NP09 literal ln(0) gate retained')
     require(rows,'source_resolution_consistency','NP10_final_D0_O3',auth['NP10']['Final_D']=='D0' and auth['NP10']['O']=='O3' and auth['NP10']['Native_reconstruction'].startswith('NE;'),'NP10 source limitation retained')
-    require(rows,'source_resolution_consistency','NP11_single_criterion_deletion_8_to_7',auth['NP11']['Single_criterion_deletion_preflight']=='APPLICABLE AT PREFLIGHT' and auth['NP11']['Single_criterion_deletion_execution_status']=='NE UNDER PRESPECIFIED REDUCED-LFPP SOLVER/NONUNIQUENESS CONDITION','preflight denominator eight preserved; seven result-producing')
+    require(rows,'source_resolution_consistency','NP11_single_criterion_deletion_8_of_8',auth['NP11']['Single_criterion_deletion_preflight']=='APPLICABLE AT PREFLIGHT' and auth['NP11']['Single_criterion_deletion_execution_status']=='RESULT-PRODUCING (NP11 POST HOC EXTENSION)','eight applicable and eight result-producing; NP11 post hoc')
     require(rows,'source_resolution_consistency','NP04_final_native_sensitivity','30 source-defined Eq. (31) scenarios' in auth['NP04']['Native_sensitivity'],'NP04 source-defined sensitivity result retained')
 
 def publication_parity(out,rows):
@@ -158,7 +164,7 @@ def publication_parity(out,rows):
     checks += [
       {'object':'NP03','check':'branch_label','status':'PASS' if 'plausible direction' in t3['NP03']['branch_configuration_label'].lower() else 'FAIL','detail':t3['NP03']['branch_configuration_label']},
       {'object':'NP05','check':'lineage_count','status':'PASS' if 'six co-primary' in t3['NP05']['branch_configuration_label'].lower() else 'FAIL','detail':'six configurations remain one lineage'},
-      {'object':'NP11','check':'single_criterion_deletion_8_to_7','status':'PASS' if 'PREFLIGHT' in t3['NP11']['single_criterion_deletion_preflight'] and t3['NP11']['single_criterion_deletion_execution_status'].startswith('NE UNDER') else 'FAIL','detail':'8 preflight-applicable; 7 result-producing'},
+      {'object':'NP11','check':'single_criterion_deletion_8_of_8','status':'PASS' if 'PREFLIGHT' in t3['NP11']['single_criterion_deletion_preflight'] and t3['NP11']['single_criterion_deletion_execution_status']=='RESULT-PRODUCING (NP11 POST HOC EXTENSION)' else 'FAIL','detail':'8 applicable; 8 result-producing; NP11 post hoc'},
       {'object':'NP12','check':'native_recommendation_set','status':'PASS' if 'recommendation set' in t3['NP12']['single_criterion_deletion_key_result'].lower() else 'FAIL','detail':t3['NP12']['single_criterion_deletion_key_result']},
       {'object':'NP04','check':'source_resolution_wording','status':'PASS' if 'implementation inconsistency' in t3['NP04']['interpretation'].lower() else 'FAIL','detail':t3['NP04']['interpretation']},
       {'object':'Figure S2','check':'source_artifact_class','status':'PASS' if len(s2)==20 and all(x.get('source_artifact_class')=='SOURCE_WORKBOOK_IMPLEMENTATION_INCONSISTENCY' and x.get('publication_label')=='SOURCE_WORKBOOK_IMPLEMENTATION_INCONSISTENCY' and 'inconsistency_class' not in x for x in s2) else 'FAIL','detail':'20 source-workbook comparison records with the documented source artifact class'},
@@ -187,6 +193,9 @@ def main():
     try:
         for npid in cases: rows.extend(run_case(REPO,npid,out,parity_profile=args.runtime_profile))
         source_resolution_checks(rows)
+        if args.mode=='quick':
+            reproduce_np11(REPO,out/'robustness/R2C/NP11',solve=False)
+            require(rows,'np11_certificate_replay','all_six_deletions',True,'exact input identities; 13 QP + 696 LP + separate 180-digit interval review; no optimizer rerun in quick mode')
         if args.mode=='full':
             r2b_full(out,rows);r2c_full(out,rows,args.runtime_profile);r2d_full(out,rows)
         else:

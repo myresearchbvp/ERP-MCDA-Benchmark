@@ -20,6 +20,8 @@ import scipy
 from scipy.optimize import minimize, LinearConstraint, Bounds
 
 SPEC_FILENAME = "R2C_EXECUTION_SPEC.csv"
+
+# Historical nonexecution label only; current NP11 results use NP11_LFPP_CERTIFICATION.py.
 NP11_NE_REASON = "NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL"
 
 

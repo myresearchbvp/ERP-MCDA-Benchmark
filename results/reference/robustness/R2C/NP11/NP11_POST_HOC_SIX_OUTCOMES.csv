@@ -1,0 +1,7 @@
+NP_ID,criterion_removed,analysis_origin,certified_complete_ranking,baseline_winner_retained,baseline_complete_ranking_retained,certificate_model
+NP11,C1,POST_HOC_NP11_EXTENSION,S4>S3>S1>S2,True,True,DELETE_C1
+NP11,C2,POST_HOC_NP11_EXTENSION,S4>S1>S3>S2,True,False,DELETE_C2
+NP11,C3,POST_HOC_NP11_EXTENSION,S4>S3>S1>S2,True,True,DELETE_C3
+NP11,C4,POST_HOC_NP11_EXTENSION,S4>S3>S2>S1,True,False,DELETE_C4
+NP11,C5,POST_HOC_NP11_EXTENSION,S4>S3>S1>S2,True,True,DELETE_C5
+NP11,C6,POST_HOC_NP11_EXTENSION,S3>S1>S2>S4,False,False,DELETE_C6
