@@ -19,19 +19,19 @@ The canonical reference route remains byte-strict. The hosted Colab profile is n
 
 Every other native, robustness, source-resolution, publication, denominator, checksum, and source-reference consistency check remains unchanged and strict. A mismatch outside these exact fields is a hard failure.
 
-These are runtime-portability equivalence checks, not scientific fallbacks. They do not alter reference scripts, solvers, objectives, bounds, tolerances, initialization, formulas, seeds, benchmark membership, denominators, NE statuses, documented reference files, or publication values.
+The hosted profile allows only the numerical tolerances listed above. Reference methods, solver settings, inputs, denominators, `NE` classifications and publication values remain unchanged.
 
 ## Runtime selection
 
 1. If the host is already Python 3.13.5, create a clean virtual environment and install `requirements-lock.txt`.
 2. Otherwise, first provision an isolated Python 3.13.5 environment and install `requirements-lock.txt`.
 3. If platform or network policy prevents canonical-Python provisioning, create an isolated environment from the hosted interpreter and install the same exact dependency lock.
-4. Execute FULL reproduction with `--runtime-profile hosted-colab` so the fail-closed hardware-portability equivalence checks are available only where documented above.
+4. Run full reproduction with `--runtime-profile hosted-colab` to apply the documented hardware-portability tolerances.
 
-The runtime adapter streams subprocess output. On failure it prints the return code, available `PARITY_REPORT.csv` non-PASS rows, expected and observed hashes when available, and the retained pipeline output tail. A mismatch beyond a declared tolerance, any rank/winner/status change, or any mismatch elsewhere remains a hard failure.
+If reproduction fails, the runtime adapter reports the exit code, failed parity rows, available hashes and diagnostic output. Differences beyond the documented tolerances, including changes in rank, winner or status, stop the run.
 
-A live hosted Colab execution is a separate runtime validation step. Local simulation of the hosted profile and static notebook checks do not by themselves constitute a live Colab execution.
+To validate a hosted Colab run, execute the notebook in Google Colab and confirm that all checks in `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` pass.
 
-The notebook checks the SHA-256 of the complete scientific checksum manifest before executing code from the cloned release. It resolves `main` to an exact commit and records that commit. This prevents the notebook from silently selecting the older, pre-NP11 release without inventing a future commit hash. The manifest excludes the notebook itself, avoiding a circular content identity.
+Before execution, the notebook verifies the scientific checksum manifest and records the commit resolved from `main`. The notebook file is excluded from the manifest to avoid a circular checksum dependency.
 
-NP11 deletion uses three fresh solver checks in full mode and exact saved-proof verification in both modes. Its certified ranks, input identities and pairwise signs have no floating-tolerance exception. The expensive construction of new rational witnesses is unnecessary for replaying valid saved certificates.
+Full reproduction reruns three NP11 solvers. Both full and quick modes verify the saved rational/interval certificates for input identities, pairwise signs and rankings, without applying the hosted-runtime floating tolerances to these checks.

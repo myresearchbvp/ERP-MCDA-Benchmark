@@ -42,13 +42,13 @@ The full run reconstructs the evaluable cases, regenerates the robustness analys
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Benchmark/blob/main/notebooks/full_reproduction_colab.ipynb)
 
-For a browser-based run, open the notebook above and run its cell. It verifies the scientific manifest before running and records the resolved Git commit. It rejects older repository content.
+Open the notebook in Colab and run its code cell to reproduce the benchmark.
 
 ## NP11 criterion deletion
 
-All eight applicable lineages have evaluable deletion results. NP11 retains the baseline winner in 5/6 deletions and the complete ranking in 3/6. Removing C6 changes the winner from S4 to S3. The six NP11 rows are labeled post hoc; the other 118 outcomes retain their original values. These are diagnostic-specific finite shares, not pooled robustness probabilities.
+All eight applicable lineages have evaluable deletion results. NP11 retains the baseline winner in five of six deletions and the complete ranking in three; deleting C6 changes the winner from S4 to S3. These fractions summarize the six deletion tests.
 
-The current R2C outputs are under `results/reference/robustness/R2C/`. Its `historical/` directory retains the original 118-row analysis and NP11 nonexecution records for traceability. These historical records are not a competing set of current results. See `docs/NP11_CRITERION_DELETION.md` for the model and certificates.
+Criterion-deletion results are in `results/reference/robustness/R2C/`. The NP11 method and its certificates are described in `docs/NP11_CRITERION_DELETION.md`.
 
 Run the automated checks with:
 
@@ -76,7 +76,7 @@ The reference environment is recorded in `environment-lock.yml` and uses:
 - pytest 9.0.2
 - Clarabel 0.11.1, OSQP 1.1.3, SymPy 1.14.0 and mpmath 1.3.0 for NP11 certification
 
-The integrated release was also executed on Python 3.12.14 with the same dependency lock and the existing hosted-runtime equivalence profile. `requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
+The benchmark was also run on Python 3.12.14 using the same pinned dependencies and the documented hosted-runtime compatibility checks. `requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
 
 ## Source material
 
