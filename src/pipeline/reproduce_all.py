@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 from pathlib import Path
-import argparse,csv,shutil,subprocess,sys,importlib.util,gzip,hashlib
+import argparse,csv,shutil,subprocess,sys,importlib.util,gzip,hashlib,math
 HERE=Path(__file__).resolve(); REPO=HERE.parents[2]
 sys.path.insert(0,str(REPO/'src'))
 from pipeline.verify_reference import verify_checksum_manifest,compare_files,csv_rows,sha256
@@ -11,6 +11,7 @@ from portable.np11_certified_deletion import reproduce as reproduce_np11
 from portable.r2d_public_reproduction import reproduce_primary as reproduce_r2d_primary
 from pipeline.build_publication_tables import build as build_tables
 from pipeline.build_figure_source_data import build as build_figures
+from pipeline.build_cross_diagnostic_table import build as build_cross_diagnostics
 
 def write_csv(path,rows):
     path.parent.mkdir(parents=True,exist_ok=True)
@@ -55,6 +56,8 @@ def _compare_r2c_deletion_hosted(got,ref):
                 if [x[0] for x in av] != [x[0] for x in bv]:
                     return False, f'row {i} score-vector labels differ'
                 for (lab,x),(_,y) in zip(av,bv):
+                    if not (math.isfinite(x) and math.isfinite(y)):
+                        return False, f'row {i} {lab} has a non-finite score'
                     d=abs(x-y)
                     if d>max_abs:
                         max_abs=d; max_where=f'row={i}, token={lab}, observed={x}, expected={y}'
@@ -114,6 +117,10 @@ def r2c_full(out,rows,runtime_profile='strict-byte'):
 
 def r2d_full(out,rows):
     od=out/'robustness/R2D'; reproduce_r2d_primary(REPO,od)
+    cross_path=build_cross_diagnostics(REPO,od,result_root=out)
+    cross_report=compare_files(cross_path,REPO/'results/reference/robustness/R2D'/cross_path.name,'r2d_cross_diagnostic_parity',cross_path.name)
+    rows.append(cross_report)
+    if cross_report['status']!='PASS':raise RuntimeError('R2D cross-diagnostic parity')
     primary=['R2D_NP04_30_SCENARIO_RESULTS.csv','R2D_NP04_CRITERION_MAPPING.csv','R2D_NP04_PRIMARY_EQ31_SCENARIO_WEIGHTS.csv','R2D_NP04_SCENARIO_WEIGHT_VALIDATION.csv','R2D_NP12_Q_SWEEP_RESULTS.csv']
     for n in primary:
         r=compare_files(od/n,REPO/'results/reference/robustness/R2D'/n,'r2d_primary_reference_parity',n);rows.append(r)
@@ -133,7 +140,7 @@ def r2d_full(out,rows):
     np06=csv_rows(REPO/'results/reference/robustness/R2D/R2D_NP06_SOURCE_REPORTED_COMPARISON.csv')
     require(rows,'r2d_source_comparison','NP06_publication_only_reconstruction_NE',len(np06)==4 and all(x['comparison_status']=='NE' and x['NATIVE_SENSITIVITY_STATUS']=='PUBLICATION_REPORTED_ONLY__RECONSTRUCTION_NE' for x in np06),'publication-reported-only; source-defined reconstruction remains NE')
     np12cmp=csv_rows(REPO/'results/reference/robustness/R2D/R2D_NP12_SOURCE_COMPARISON.csv')
-    require(rows,'r2d_source_comparison','NP12_source_comparison_PASS',len(np12cmp)==15 and len(set(x['q_v'] for x in np12cmp))==5 and all(x['comparison_class']=='MATCH' for x in np12cmp),'five q/v values × three alternatives; all source comparisons MATCH')
+    require(rows,'r2d_source_comparison','NP12_source_comparison_PASS',len(np12cmp)==15 and len(set(x['q_v'] for x in np12cmp))==5 and all(x['comparison_class']=='MATCH' for x in np12cmp),'five q/v values × three alternatives; S/R/Q at reported precision, ranks and acceptability MATCH; Table 7 advantage differences are inconsistent with Table 6')
     return od
 
 def source_resolution_checks(rows):
@@ -166,7 +173,7 @@ def publication_parity(out,rows):
       {'object':'NP05','check':'lineage_count','status':'PASS' if 'six co-primary' in t3['NP05']['branch_configuration_label'].lower() else 'FAIL','detail':'six configurations remain one lineage'},
       {'object':'NP11','check':'single_criterion_deletion_8_of_8','status':'PASS' if 'PREFLIGHT' in t3['NP11']['single_criterion_deletion_preflight'] and t3['NP11']['single_criterion_deletion_execution_status']=='RESULT-PRODUCING (NP11 POST HOC EXTENSION)' else 'FAIL','detail':'8 applicable; 8 result-producing; NP11 post hoc'},
       {'object':'NP12','check':'native_recommendation_set','status':'PASS' if 'recommendation set' in t3['NP12']['single_criterion_deletion_key_result'].lower() else 'FAIL','detail':t3['NP12']['single_criterion_deletion_key_result']},
-      {'object':'NP04','check':'source_resolution_wording','status':'PASS' if 'implementation inconsistency' in t3['NP04']['interpretation'].lower() else 'FAIL','detail':t3['NP04']['interpretation']},
+      {'object':'NP04','check':'source_resolution_wording','status':'PASS' if any(phrase in t3['NP04']['interpretation'].lower() for phrase in ('implementation inconsistency', 'implementation inconsistencies')) else 'FAIL','detail':t3['NP04']['interpretation']},
       {'object':'Figure S2','check':'source_artifact_class','status':'PASS' if len(s2)==20 and all(x.get('source_artifact_class')=='SOURCE_WORKBOOK_IMPLEMENTATION_INCONSISTENCY' and x.get('publication_label')=='SOURCE_WORKBOOK_IMPLEMENTATION_INCONSISTENCY' and 'inconsistency_class' not in x for x in s2) else 'FAIL','detail':'20 source-workbook comparison records with the documented source artifact class'},
     ]
     with (out/'PUBLICATION_PARITY.csv').open('w',encoding='utf-8',newline='') as f:

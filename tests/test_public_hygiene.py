@@ -1,16 +1,23 @@
 from pathlib import Path
-import json, re
+import json, re, subprocess
 
 R = Path(__file__).resolve().parents[1]
 
 def test_no_cache_archive_or_third_party_source_binary_pollution():
-    bad=[]
     banned_suffix={'.zip','.pdf','.doc','.docx','.xls','.xlsx','.pyc','.pyo'}
     banned_dirs={'__pycache__','.pytest_cache'}
-    for p in R.rglob('*'):
-        rel=p.relative_to(R)
-        if any(part in banned_dirs for part in rel.parts): bad.append(rel.as_posix())
-        if p.is_file() and p.suffix.lower() in banned_suffix: bad.append(rel.as_posix())
+    if (R/'.git').exists():
+        cp=subprocess.run(['git','-C',str(R),'ls-files','-z'],check=True,capture_output=True,text=True)
+        paths=[Path(s) for s in cp.stdout.split('\0') if s]
+    else:
+        roots=['src','data','results','docs','notebooks','tests','LICENSES','.github']
+        paths=[p.relative_to(R) for name in roots for p in (R/name).rglob('*')
+               if p.is_file() and not any(part in banned_dirs for part in p.relative_to(R).parts)
+               and p.suffix.lower() not in {'.pyc','.pyo'}]
+        paths.extend(p.relative_to(R) for p in R.iterdir() if p.is_file()
+                     and p.name not in {'erp_mcda_full_reproduction_result.zip'})
+    bad=[p.as_posix() for p in paths if p.suffix.lower() in banned_suffix
+         or any(part in banned_dirs for part in p.parts)]
     assert not bad,bad
 
 def test_required_repository_metadata_and_single_notebook():

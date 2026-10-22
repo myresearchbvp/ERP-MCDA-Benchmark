@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Google Colab runtime adapter for the ERP-MCDA benchmark repository.
 
-This module changes only runtime provisioning, hosted-runtime parity plumbing, and diagnostics.
-Scientific computation is still performed by the reference scientific implementations. The Colab route uses
-narrowly scoped numerical-equivalence gates for hardware-sensitive printed floating outputs only;
-all scientific structure/ranks/winners and all other reference gates remain strict.
+Creates an isolated environment and runs the benchmark with the documented
+hosted-runtime tolerances. See docs/COLAB_RUNTIME_COMPATIBILITY.md.
 """
 from __future__ import annotations
 
@@ -51,7 +49,7 @@ def _venv_python(prefix: Path) -> Path:
 def _install_lock(python: Path, repo: Path, label: str) -> None:
     lock = repo / "requirements-lock.txt"
     if not lock.exists():
-        raise RuntimeError("Exact audited requirements-lock.txt is required")
+        raise RuntimeError("requirements-lock.txt is required")
     rc, tail = _run_streaming(
         [str(python), "-m", "pip", "install", "-r", str(lock)], label=label
     )
@@ -144,15 +142,13 @@ def _create_host_compat_runtime(repo: Path, work_root: Path) -> tuple[Path, str]
 def prepare_runtime(repo: Path, work_root: Path) -> tuple[Path, str, str]:
     """Return an interpreter, route label, and version summary for a Colab run.
 
-    The canonical interpreter is always preferred. If network/runtime policy prevents that,
-    a hosted-Python compatibility environment is allowed only because the downstream full
-    reproduction performs strict scientific equivalence/reference gates. The sole non-byte gate
-    is limited to the documented NP11 solver-output and R2C score-vector tolerances for hosted BLAS variation.
+    Prefer Python 3.13.5. If it cannot be provisioned, use the hosted interpreter
+    with the same dependency versions and the documented numerical tolerances.
     """
     repo = repo.resolve(); work_root = work_root.resolve(); work_root.mkdir(parents=True, exist_ok=True)
     host = sys.version.split()[0]
     _print(f"[runtime] Hosted interpreter: {sys.executable} (Python {host})")
-    _print("[runtime] Canonical audited reference: Python 3.13.5 + requirements-lock.txt")
+    _print("[runtime] Reference environment: Python 3.13.5 + requirements-lock.txt")
     if sys.version_info[:3] == CANONICAL_PYTHON:
         prefix = work_root / "erp_mcda_canonical_venv"
         if prefix.exists(): shutil.rmtree(prefix)
@@ -190,7 +186,7 @@ def _print_failed_parity(parity: Path) -> None:
 
 
 def run_full_reproduction(python: Path, repo: Path, output_dir: Path) -> None:
-    """Execute FULL reproduction using the fail-closed hosted-runtime compatibility profile."""
+    """Run the full analysis with the hosted-runtime comparison profile."""
     cmd = [str(python), str(repo / "src/pipeline/reproduce_all.py"),
            "--mode", "full", "--output-dir", str(output_dir),
            "--runtime-profile", "hosted-colab"]

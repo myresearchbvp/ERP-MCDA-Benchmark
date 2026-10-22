@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""ERP-MCDA benchmark R2B — terminal-weight perturbation terminal-weight stress only.
+"""ERP-MCDA benchmark R2B: terminal-weight perturbation.
 
-This implementation consumes the prespecified execution specification plus prespecified
-native reconstruction artifacts. It performs no single-criterion deletion, no
-native sensitivity, no decision-matrix perturbation, and no literature/reconstruction
-retuning.
+Uses the execution specification and reconstructed baseline inputs to evaluate
+decision stability under multiplicative weight perturbations.
 """
 from __future__ import annotations
 
@@ -311,7 +309,7 @@ class Inputs:
         S=weighted.sum(axis=1); R=weighted.max(axis=1)
         ss=S.min(axis=1); sm=S.max(axis=1); rs=R.min(axis=1); rm=R.max(axis=1)
         if np.any(sm==ss) or np.any(rm==rs):
-            raise ValueError('NP12 VIKOR denominator collapsed in an terminal-weight perturbation draw')
+            raise ValueError('NP12 VIKOR denominator collapsed in a terminal-weight perturbation draw')
         q=0.5
         Q=q*(S-ss[:,None])/(sm-ss)[:,None] + (1-q)*(R-rs[:,None])/(rm-rs)[:,None]
         return Q,S,R
@@ -372,7 +370,7 @@ def baseline_validation(spec_rows: List[dict], inp: Inputs) -> List[str]:
         expected=r['baseline_complete_weak_order'].replace('  ',' ')
         if observed!=expected:
             raise ValueError(f'{npid}/{cfg} baseline order mismatch: observed={observed!r} expected={expected!r}')
-        notes.append(f'{npid}/{cfg}: baseline order {observed} — PASS')
+        notes.append(f'{npid}/{cfg}: baseline order {observed}: PASS')
     return notes
 
 
@@ -587,7 +585,7 @@ def main():
     inp=Inputs(args.r1a,args.r1b,args.r1c,args.r1d)
     notes=baseline_validation(spec,inp)
     if args.mode=='baseline-validation':
-        print('\n'.join(notes)); print('NO RNG INSTANTIATED; NO PERTURBATION DRAW GENERATED.')
+        print('\n'.join(notes)); print('Specification check complete; simulation was not requested.')
         return
     if args.output_dir is None: raise ValueError('--output-dir is required in execute mode')
     # RNGs are instantiated only inside execute(), after all baseline/spec checks above have passed.

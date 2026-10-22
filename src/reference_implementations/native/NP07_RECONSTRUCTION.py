@@ -29,8 +29,8 @@ ranks=np.empty(n,int)
 for r,idx in enumerate(order,1): ranks[idx]=r
 rows=[]
 for i,a in enumerate(alts):
-    rows.append({'publication_model':'NP07_Kilic_2015 Kılıç et al. 2015 — ANP + PROMETHEE II','status':'EVALUABLE','alternative':a,'positive_flow':format(phi_plus[i],'.15g'),'negative_flow':format(phi_minus[i],'.15g'),'net_flow':format(phi[i],'.15g'),'rank':int(ranks[i]),'winner':'YES' if ranks[i]==1 else 'NO','note':'literal printed D2 checkpoint'})
-rows.append({'publication_model':'NP07_Temur_Bolat_2018 Temur & Bolat 2018 — CBDO robust reanalysis','status':'NOT_EVALUABLE_AT_D3_FROM_PUBLIC_SOURCE','alternative':'','positive_flow':'','negative_flow':'','net_flow':'','rank':'','winner':'','note':'unseeded random CBDO GUI starting points/cloud state and implementation codes are not public in available source materials; no surrogate run performed'})
+    rows.append({'publication_model':'NP07_Kilic_2015 Kılıç et al. 2015: ANP + PROMETHEE II','status':'EVALUABLE','alternative':a,'positive_flow':format(phi_plus[i],'.15g'),'negative_flow':format(phi_minus[i],'.15g'),'net_flow':format(phi[i],'.15g'),'rank':int(ranks[i]),'winner':'YES' if ranks[i]==1 else 'NO','note':'literal printed D2 checkpoint'})
+rows.append({'publication_model':'NP07_Temur_Bolat_2018 Temur & Bolat 2018: CBDO robust reanalysis','status':'NOT_EVALUABLE_AT_D3_FROM_PUBLIC_SOURCE','alternative':'','positive_flow':'','negative_flow':'','net_flow':'','rank':'','winner':'','note':'Exact CBDO replication requires the unreported random starting points, seed and implementation code'})
 with OUT.open('w',encoding='utf-8',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
 # deterministic validation assertions for evaluable component

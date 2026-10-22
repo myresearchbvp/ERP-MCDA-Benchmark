@@ -49,14 +49,14 @@ def main():
         inter.append({'stage':'ideal','criterion':r['criterion'],'alternative':'','metric':'f_minus','value':f'{fworst[j]:.12f}'})
     write_csv(HERE/'NP12_CALCULATED_INTERMEDIATES.csv',inter,['stage','criterion','alternative','metric','value'])
     validation=['NP12 PRECOMPARISON VALIDATION',
-        f'dimensions: alternatives={m}, criteria={n} — '+('PASS' if n==18 else 'FAIL'),
-        f'criterion_weight_sum={w.sum():.12f} — '+('PASS' if abs(w.sum()-1)<1e-12 else 'FAIL'),
-        'benefit/cost directions: K1–K5=min, K6–K18=max — PASS',
-        'normalized regret range [0,1] — '+('PASS' if reg.min()>=-1e-12 and reg.max()<=1+1e-12 else 'FAIL'),
-        'S=sum weighted regrets; R=max weighted regret — PASS',
-        'q values={0,0.25,0.5,0.75,1.0} are publication-reported native values — PASS',
-        'weak-order tie handling enabled; q=0 reconstructed A1/A3 tie handled as a set — PASS',
-        'NaN/inf check — '+('PASS' if np.isfinite(reg).all() and np.isfinite(S).all() and np.isfinite(R).all() else 'FAIL'),
+        f'dimensions: alternatives={m}, criteria={n}: '+('PASS' if n==18 else 'FAIL'),
+        f'criterion_weight_sum={w.sum():.12f}: '+('PASS' if abs(w.sum()-1)<1e-12 else 'FAIL'),
+        'benefit/cost directions: K1–K5=min, K6–K18=max: PASS',
+        'normalized regret range [0,1]: '+('PASS' if reg.min()>=-1e-12 and reg.max()<=1+1e-12 else 'FAIL'),
+        'S=sum weighted regrets; R=max weighted regret: PASS',
+        'q values={0,0.25,0.5,0.75,1.0} are publication-reported native values: PASS',
+        'weak-order tie handling enabled; q=0 reconstructed A1/A3 tie handled as a set: PASS',
+        'NaN/inf check: '+('PASS' if np.isfinite(reg).all() and np.isfinite(S).all() and np.isfinite(R).all() else 'FAIL'),
         'The five publication-reported q/v values are reproduced separately by the source-defined sensitivity module.']
     (HERE/'NP12_RECONSTRUCTION_VALIDATION.txt').write_text('\n'.join(validation)+'\n',encoding='utf-8')
 

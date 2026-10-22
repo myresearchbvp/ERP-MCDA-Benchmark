@@ -1,98 +1,60 @@
 # ERP-MCDA Computational Reconstruction and Decision-Stability Benchmark
 
-This repository accompanies the study *Computational Reconstruction, Auditability, and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark*.
+Data and Python code for *Computational Reconstruction, Auditability and Decision Stability in Published Multicriteria Models for Enterprise Resource Planning Selection: A Cross-Case Benchmark*.
 
-It contains the data and Python code used to reconstruct published ERP multi-criteria decision-analysis (MCDA) results and examine how stable the reported decisions are when criterion weights or individual criteria are changed.
-
-## What is included
-
-The benchmark covers twelve published ERP-MCDA cases (NP01-NP12). Nine can be reconstructed at the terminal ranking stage from the available source material. The repository also includes:
-
-- terminal-weight perturbation analysis
-- single-criterion deletion analysis, including six post hoc NP11 deletions
-- the source-defined sensitivity analyses for NP04 and NP12
-- machine-readable data for Tables 1-3 and Figures 1 and 2, plus additional deletion and source-sensitivity diagnostics
-- provenance records for the source material used in each case
-
-`NE` means that a calculation is not evaluable or not applicable under the stated source and method conditions. Details are given in `docs/KNOWN_NE_AND_LIMITATIONS.md`.
-
-## Run the code
-
-Install the dependencies:
-
-```bash
-python -m pip install -r requirements-lock.txt
-```
-
-For a quick check of selected baselines, NP11 mathematical certificates and publication data:
-
-```bash
-python src/pipeline/reproduce_all.py --mode quick --output-dir reproduced_quick --runtime-profile hosted-colab
-```
-
-For the full reproduction:
-
-```bash
-python src/pipeline/reproduce_all.py --mode full --output-dir reproduced --runtime-profile hosted-colab
-```
-
-The full run reconstructs the evaluable cases, regenerates the robustness analyses, recalculates NP11 with three solvers, verifies its saved rational/interval certificates and rebuilds the publication data files. The main run reports are written to `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` in the output directory.
+The benchmark covers 12 ERP-MCDA decision-problem lineages from 13 publications. Nine lineages can be reconstructed through the terminal ranking stage. The code evaluates terminal-weight perturbation, single-criterion deletion and source-defined sensitivity analyses for NP04 and NP12.
 
 ## Google Colab
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/myresearchbvp/ERP-MCDA-Benchmark/blob/main/notebooks/full_reproduction_colab.ipynb)
 
-Open the notebook in Colab and run its code cell to reproduce the benchmark.
+Run the notebook's code cell. It installs the dependencies, reproduces the analyses and downloads the results.
 
-## NP11 criterion deletion
+## Run locally
 
-All eight applicable lineages have evaluable deletion results. NP11 retains the baseline winner in five of six deletions and the complete ranking in three; deleting C6 changes the winner from S4 to S3. These fractions summarize the six deletion tests.
+Install the dependencies and run the full analysis from the repository root:
 
-Criterion-deletion results are in `results/reference/robustness/R2C/`. The NP11 method and its certificates are described in `docs/NP11_CRITERION_DELETION.md`.
+```bash
+python -m pip install -r requirements-lock.txt
+python src/pipeline/reproduce_all.py --mode full --output-dir reproduced --runtime-profile hosted-colab
+```
 
-Run the automated checks with:
+For a quick check of selected baselines, NP11 certificates and publication data:
+
+```bash
+python src/pipeline/reproduce_all.py --mode quick --output-dir reproduced_quick --runtime-profile hosted-colab
+```
+
+Run the tests with:
 
 ```bash
 python -m pytest -q -p no:cacheprovider
 ```
 
-## Repository structure
+The full run reconstructs the evaluable cases, reruns the robustness analyses, checks NP11 with three solvers and verifies its rational/interval certificates. It also rebuilds the table and figure data. Results and verification reports are saved in the selected output directory; `PARITY_REPORT.csv` and `PUBLICATION_PARITY.csv` report agreement with the reference files.
 
-- `data/` - extracted, standardised and provenance data
-- `src/` - reconstruction and robustness code
-- `results/reference/` - reference results used by the reproduction pipeline
-- `results/publication/` - data used for the paper's tables and figures
-- `docs/` - method notes, provenance information and benchmark documentation
-- `notebooks/` - Google Colab entry point
-- `tests/` - automated checks
+## Files and methods
+
+- `data/`: extracted inputs, standardized data and source provenance
+- `src/`: reconstruction and robustness code
+- `results/reference/`: benchmark results and verification data
+- `results/publication/`: data for Tables 1-3, Figures 1-2 and additional diagnostics
+- `docs/`: [methods](docs/METHOD_MAP.md), [reproducibility scope](docs/REPRODUCIBILITY_SCOPE.md), [limitations](docs/KNOWN_NE_AND_LIMITATIONS.md) and [NP11 criterion deletion](docs/NP11_CRITERION_DELETION.md)
+- `notebooks/`: Google Colab notebook
+- `tests/`: automated checks
+
+`NE` denotes a calculation that is not evaluable or not applicable under the stated source and method conditions.
 
 ## Environment
 
-The reference environment is recorded in `environment-lock.yml` and uses:
+The reference environment uses Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. `environment-lock.yml` records the environment and `requirements-lock.txt` pins the direct dependencies, including the NP11 certification tools. The analyses have also been run on Python 3.12.14. The [runtime notes](docs/COLAB_RUNTIME_COMPATIBILITY.md) explain the numerical tolerances used by the `hosted-colab` profile.
 
-- Python 3.13.5
-- NumPy 2.3.5
-- SciPy 1.17.0
-- pytest 9.0.2
-- Clarabel 0.11.1, OSQP 1.1.3, SymPy 1.14.0 and mpmath 1.3.0 for NP11 certification
+## Sources and citation
 
-The benchmark was also run on Python 3.12.14 using the same pinned dependencies and the documented hosted-runtime compatibility checks. `requirements-lock.txt` pins the direct Python dependencies. `checksums.sha256` covers the computational files checked by the reproduction pipeline.
+Source locators and file hashes are listed in `data/provenance/`. Article PDFs and publisher workbooks are not redistributed. See [source provenance](docs/SOURCE_PROVENANCE.md).
 
-## Source material
-
-The repository does not redistribute article PDFs, publisher supplementary workbooks or other third-party source files.
-
-`data/provenance/CASE_SOURCE_MAP.csv` records the sources and DOI or stable locators used for each case. `data/provenance/SOURCE_MANIFEST_SHA256.csv` records source-file hashes. Further details are in `docs/SOURCE_PROVENANCE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md`.
-
-
-## Citation
-
-> *If you use this repository, please cite the accompanying article once it is published. Full citation details will be added here after publication.*
+Please cite the accompanying article when using this benchmark. Publication details will be added when available.
 
 ## License
 
-The original code in this repository is licensed under the MIT License.
-
-Original documentation and project-generated outputs or data are licensed under CC BY 4.0 only where the authors have the right to grant that licence. Third-party publications, publisher supplements and other third-party material are not relicensed by this repository.
-
-See `LICENSE`, `LICENSES/CC-BY-4.0.txt`, `LICENSES/CONTENT_LICENSE_SCOPE.md` and `THIRD_PARTY_DATA_AND_LICENSES.md` for details.
+Original code is licensed under MIT. Original documentation and project-generated outputs are licensed under CC BY 4.0 where the authors hold the necessary rights. See [LICENSE](LICENSE), [content license scope](LICENSES/CONTENT_LICENSE_SCOPE.md) and [third-party sources](THIRD_PARTY_DATA_AND_LICENSES.md).

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""ERP-MCDA benchmark — prespecified single-criterion deletion analysis.
+"""ERP-MCDA benchmark: prespecified single-criterion deletion analysis.
 
-This execution-only reference implementation reproduces the documented one-at-a-time
-criterion deletions and method-compatible recomputations used in the benchmark. It does
-not implement terminal-weight perturbation, native source-defined sensitivity, or
-decision-matrix perturbation.
+Reproduces the 118 original criterion-deletion operations and their historical
+records. The adapter in src/portable/r2c_public_reproduction.py adds the six
+NP11 deletions verified by optimization certificates.
 """
 from __future__ import annotations
 
@@ -621,19 +620,19 @@ def make_spec(inp: Inputs) -> List[dict]:
 
     for c in inp.np01_criteria:
         add("NP01", "NP01_PRIMARY", c, "APPLICABLE", "NATIVE_REWEIGHTING_AFTER_DELETION",
-            "data/standardized/runtime/R1A/NP01/NP01_EXTRACTION.csv — reduced fuzzy-AHP local reciprocal matrix + TOPSIS decision matrix",
+            "data/standardized/runtime/R1A/NP01/NP01_EXTRACTION.csv: reduced fuzzy-AHP local reciprocal matrix + TOPSIS decision matrix",
             "delete within own local FAHP parent; keep 3 main-criterion weights unchanged; regenerate global weights")
     for c in inp.np02_criteria:
         add("NP02", "NP02_PRIMARY", c, "APPLICABLE", "NATIVE_REWEIGHTING_AFTER_DELETION",
-            "data/standardized/runtime/R1A/NP02/NP02_EXTRACTION.csv — reduced criteria AHP matrix + retained local alternative priorities")
+            "data/standardized/runtime/R1A/NP02/NP02_EXTRACTION.csv: reduced criteria AHP matrix + retained local alternative priorities")
     for cfg, cost04 in [("A_STRICT_EXPLICIT_DIRECTION", False), ("ERP04_COST_PARALLEL", True)]:
         for c in inp.np03_criteria:
             add("NP03", cfg, c, "APPLICABLE", "TERMINAL_POSTWEIGHT_DELETION",
-                "data/standardized/runtime/R1A/NP03/NP03_EXTRACTION.csv — Table-3 normalized D2 checkpoint + Table-2 scalar weights",
+                "data/standardized/runtime/R1A/NP03/NP03_EXTRACTION.csv: Table-3 normalized D2 checkpoint + Table-2 scalar weights",
                 "same deleted criterion in both prospectively fixed direction branches")
     for c in inp.np04_criteria:
         add("NP04", "NP04_PRIMARY", c, "APPLICABLE", "TERMINAL_POSTWEIGHT_DELETION",
-            "data/standardized/runtime/R1B/NP04/NP04_INTERMEDIATES.csv — prespecified primary literal rough normalized matrix + printed rough weights",
+            "data/standardized/runtime/R1B/NP04/NP04_INTERMEDIATES.csv: prespecified primary literal rough normalized matrix + printed rough weights",
             "remaining rough weights unchanged; no interval collapse; no Table-6/rounding explanatory comparison outside the primary reconstruction")
     configs = [("CE-I", "Hamming"), ("CE-I", "Euclidean"), ("CE-I", "Hausdorff"),
                ("CE-II", "Hamming"), ("CE-II", "Euclidean"), ("CE-II", "Hausdorff")]
@@ -641,7 +640,7 @@ def make_spec(inp: Inputs) -> List[dict]:
         cfg = f"p-HFC_{kind}_{dist}"
         for c in ["C1", "C2", "C3", "C4", "C5"]:
             add("NP05", cfg, c, "APPLICABLE", "NATIVE_REWEIGHTING_AFTER_DELETION",
-                "data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv — retained HFEs with entropy-distance normalization recomputed",
+                "data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv: retained HFEs with entropy-distance normalization recomputed",
                 "q=2 and beta=3 fixed; C6 retained as sole cost criterion")
         add("NP05", cfg, "C6", "NE", "NE",
             "data/standardized/runtime/R1B/NP05/NP05_EXTRACTION.csv",
@@ -651,7 +650,7 @@ def make_spec(inp: Inputs) -> List[dict]:
             "Single-criterion deletion NE: no defensible reduced Choquet capacity; interaction-off comparison reserved for native sensitivity", baseline_key=("NP06", "NP06_PRIMARY"))
     for c in inp.np07_criteria:
         add("NP07", "KILIC_2015_PROMETHEE_II", c, "APPLICABLE", "TERMINAL_POSTWEIGHT_DELETION",
-            "data/standardized/runtime/R1C/NP07/NP07_EXTRACTION.csv — printed ANP weights + performance/preference-function system",
+            "data/standardized/runtime/R1C/NP07/NP07_EXTRACTION.csv: printed ANP weights + performance/preference-function system",
             "printed weights renormalized after deletion; V-shape p=2 fixed; Temur & Bolat CBDO excluded")
     for c in ["c1", "c2", "c3", "c4"]:
         add("NP08", "NP08_NE", c, "NE", "NE", "docs/KNOWN_NE_AND_LIMITATIONS.md",
@@ -668,7 +667,7 @@ def make_spec(inp: Inputs) -> List[dict]:
             NP11_NE_REASON)
     for c in inp.np12_criteria:
         add("NP12", "VIKOR_Q050", c, "APPLICABLE", "TERMINAL_POSTWEIGHT_DELETION",
-            "data/standardized/runtime/R1D/NP12/NP12_EXTRACTION.csv — raw 3×18 data/directions/weights; R2B source-native VIKOR acceptance rule",
+            "data/standardized/runtime/R1D/NP12/NP12_EXTRACTION.csv: raw 3×18 data/directions/weights; R2B source-native VIKOR acceptance rule",
             "q/v=0.5 fixed; native recommendation set primary; top-Q leader secondary")
     return rows
 
@@ -717,12 +716,12 @@ def validate_baselines(inp: Inputs) -> List[str]:
             det = rank_details(bd["scores"], bd["alts"], bd["higher"])
             if len(det["winner_indices"]) != 1:
                 raise ValueError(f"non-unique ordinary baseline winner {npid}/{cfg}")
-        notes.append(f"{npid}/{cfg}: undeleted baseline weak order {observed} — PASS")
+        notes.append(f"{npid}/{cfg}: undeleted baseline weak order {observed}: PASS")
     v = baselines[("NP12", "VIKOR_Q050")]["vikor"]
     rec = canonical_set(np.flatnonzero(v["rec_mask"]), inp.np12_alts)
     if rec != "A2":
         raise ValueError(f"NP12 baseline native recommendation set mismatch: {rec}")
-    notes.append("NP12/VIKOR_Q050: undeleted native recommendation set A2 at q/v=0.5 — PASS")
+    notes.append("NP12/VIKOR_Q050: undeleted native recommendation set A2 at q/v=0.5: PASS")
     return notes
 
 
@@ -928,7 +927,7 @@ def write_np03_summary(results: List[dict], out: Path) -> None:
             "primary_Kendall_tau_b": a["Kendall_tau_b"], "parallel_Kendall_tau_b": b["Kendall_tau_b"],
             "same_winner_set_between_branches": bools(a["exact_winner_set"] == b["exact_winner_set"]),
             "same_complete_weak_order_between_branches": bools(a["complete_weak_order"] == b["complete_weak_order"]),
-            "source_resolution_rule": "NONE_FROM_DELETION_OUTCOMES — source direction ambiguity remains prospectively parallel",
+            "source_resolution_rule": "NONE_FROM_DELETION_OUTCOMES: source direction ambiguity remains prospectively parallel",
         })
     fields = list(rows[0].keys())
     write_csv(out / "R2C_NP03_PARALLEL_BRANCH_COMPARISON.csv", rows, fields)
@@ -1023,7 +1022,7 @@ def write_cross_case_summary(results: List[dict], out: Path) -> None:
 
 def write_method_notes(out: Path, results: List[dict]) -> None:
     counts = Counter(r["NP_ID"] for r in results)
-    text = f"""ERP-MCDA benchmark — R2C CASE METHOD NOTES
+    text = f"""ERP-MCDA benchmark: R2C CASE METHOD NOTES
 
 SCOPE
 Executed deterministic single-criterion deletion analysis under the prespecified protocol and documented applicability plan.
@@ -1034,18 +1033,18 @@ NP01={counts['NP01']} (12); NP02={counts['NP02']} (5); NP03={counts['NP03']} (30
 Total executed deletion-outcome rows={len(results)}. Expected=118.
 
 METHOD INPUTS AND RULES
-NP01 — NATIVE_REWEIGHTING_AFTER_DELETION. The deleted subcriterion is removed from its own local triangular-fuzzy reciprocal pairwise matrix; that local fuzzy-AHP vector is recomputed with the prespecified literal geometric-mean/defuzzification algorithm. Three main-criterion weights remain unchanged. Global weights and TOPSIS are regenerated. No simple final-weight deletion substitute is used.
-NP02 — NATIVE_REWEIGHTING_AFTER_DELETION. The reduced criteria AHP matrix is solved by the prespecified column-normalization/row-mean rule; retained local alternative priorities are synthesized.
-NP03 — TERMINAL_POSTWEIGHT_DELETION from the prespecified D2 normalized checkpoint. Both A_STRICT_EXPLICIT_DIRECTION and ERP04_COST_PARALLEL are run for the same 15 deletion labels, separately, with no branch selection from outcomes.
-NP04 — TERMINAL_POSTWEIGHT_DELETION on the prespecified primary literal raw-supplement rough-normalized checkpoint. Remaining printed rough weights are not renormalized or collapsed; native rough-WISP K/P and four utility families are recomputed. The Table-6/rounding explanatory comparison outside the primary reconstruction is not used.
-NP05 — NATIVE_REWEIGHTING_AFTER_DELETION for C1–C5 in all six co-primary CE-I/CE-II × Hamming/Euclidean/Hausdorff configurations. Entropy-distance normalization is recomputed over retained criteria and the full p-HFC/COPRAS downstream chain is rerun. C6 is NE because it is the sole cost criterion; q=2 and beta=3 stay fixed.
-NP06 — NE. No reduced Choquet capacity or Shapley-index renormalization was invented. The publication-reported interaction-off comparison is treated separately under the source-defined sensitivity scope; no uniquely executable source-defined no-interaction reconstruction is available.
-NP07 — Kılıç et al. 2015 only. TERMINAL_POSTWEIGHT_DELETION with retained printed ANP weights renormalized and PROMETHEE II recomputed; V-shape p=2 fixed. Temur & Bolat CBDO is not emulated.
-NP08 — NE because no terminally unique baseline/tie-break exists.
-NP09 — NE because the literal native chain becomes nonfinite before terminal output.
-NP10 — NE at final D0/O3 source resolution because the concrete Qb/Qn map and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline can be defined from the documented public source chain.
-NP11 — NE for single-criterion deletion (C1–C6) by prespecified execution rule. Reason: NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL. No NP11 criterion deletion, solver recovery, alternate start, multistart, alternate solver, tolerance/bound/M change, gauge constraint, analytical tie-break, or fallback was run. DEMATEL remains excluded.
-NP12 — TERMINAL_POSTWEIGHT_DELETION with remaining published weights renormalized and q/v fixed at 0.5. S/R/Q and the same source-native VIKOR C1/C2 compromise-acceptance rule are recomputed. Native recommendation set is primary; top-Q leader is secondary only. The five publication-reported q/v values are reproduced separately by the source-defined sensitivity module.
+NP01: NATIVE_REWEIGHTING_AFTER_DELETION. The deleted subcriterion is removed from its own local triangular-fuzzy reciprocal pairwise matrix; that local fuzzy-AHP vector is recomputed with the prespecified literal geometric-mean/defuzzification algorithm. Three main-criterion weights remain unchanged. Global weights and TOPSIS are regenerated. No simple final-weight deletion substitute is used.
+NP02: NATIVE_REWEIGHTING_AFTER_DELETION. The reduced criteria AHP matrix is solved by the prespecified column-normalization/row-mean rule; retained local alternative priorities are synthesized.
+NP03: TERMINAL_POSTWEIGHT_DELETION from the prespecified D2 normalized checkpoint. Both A_STRICT_EXPLICIT_DIRECTION and ERP04_COST_PARALLEL are run for the same 15 deletion labels, separately, with no branch selection from outcomes.
+NP04: TERMINAL_POSTWEIGHT_DELETION on the prespecified primary literal raw-supplement rough-normalized checkpoint. Remaining printed rough weights are not renormalized or collapsed; native rough-WISP K/P and four utility families are recomputed. The Table-6/rounding explanatory comparison outside the primary reconstruction is not used.
+NP05: NATIVE_REWEIGHTING_AFTER_DELETION for C1–C5 in all six co-primary CE-I/CE-II × Hamming/Euclidean/Hausdorff configurations. Entropy-distance normalization is recomputed over retained criteria and the full p-HFC/COPRAS downstream chain is rerun. C6 is NE because it is the sole cost criterion; q=2 and beta=3 stay fixed.
+NP06: NE. No reduced Choquet capacity or Shapley-index renormalization was invented. The publication-reported interaction-off comparison is treated separately under the source-defined sensitivity scope; no uniquely executable source-defined no-interaction reconstruction is available.
+NP07: Kılıç et al. 2015 only. TERMINAL_POSTWEIGHT_DELETION with retained printed ANP weights renormalized and PROMETHEE II recomputed; V-shape p=2 fixed. Temur & Bolat CBDO is not emulated.
+NP08: NE because no terminally unique baseline/tie-break exists.
+NP09: NE because the literal native chain becomes nonfinite before terminal output.
+NP10: NE at final D0/O3 source resolution because the concrete Qb/Qn map and Supplementary Tables S1–S6 are unavailable; no unique terminal baseline can be defined from the documented public source chain.
+NP11: NE for single-criterion deletion (C1–C6) by prespecified execution rule. Reason: NUMERICAL_NONUNIQUENESS_AND_SOLVER_FAILURE_UNDER_PRESPECIFIED_LITERAL_PROTOCOL. No NP11 criterion deletion, solver recovery, alternate start, multistart, alternate solver, tolerance/bound/M change, gauge constraint, analytical tie-break, or fallback was run. DEMATEL remains excluded.
+NP12: TERMINAL_POSTWEIGHT_DELETION with remaining published weights renormalized and q/v fixed at 0.5. S/R/Q and the same source-native VIKOR C1/C2 compromise-acceptance rule are recomputed. Native recommendation set is primary; top-Q leader is secondary only. The five publication-reported q/v values are reproduced separately by the source-defined sensitivity module.
 
 SCIENTIFIC INTERPRETATION
 Deletion fractions are descriptive shares of the finite, prospectively enumerated one-at-a-time criterion omissions under method-compatible recomputation. They are not probabilities and are not pooled into an ERP-literature-wide robustness/failure rate.

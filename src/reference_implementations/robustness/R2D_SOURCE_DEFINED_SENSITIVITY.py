@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ERP-MCDA benchmark — source-defined native sensitivity analysis.
+"""ERP-MCDA benchmark: source-defined native sensitivity analysis.
 
 This reference implementation reproduces the NP04 Eq. (31) source-defined scenarios and
 the NP12 q/v sweep. Source-workbook comparison records are maintained separately as
@@ -191,7 +191,7 @@ def rough_wisp(weights: Dict[Tuple[str,str],float], directions: Dict[str,str], n
 
 
 def vikor_recommendation(scores: Dict[str,float], S: Dict[str,float], R: Dict[str,float]):
-    """Native VIKOR compromise rule used prospectively in documented source-native.
+    """Native VIKOR compromise recommendation rule.
 
     DQ=1/(J-1). C1 is acceptable advantage against the second Q tier.
     C2 is stability: at least one Q-best alternative is also best by S or R.

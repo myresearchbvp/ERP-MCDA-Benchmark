@@ -82,8 +82,7 @@ def _np11_numeric_equivalent(got: Path, ref: Path) -> tuple[bool, str]:
                     f'observed={a[k]} expected={b[k]}'
                 )
 
-    # Explicit scientific invariants for the terminal output. These are redundant with
-    # exact rank matching but make the acceptance rule auditable and fail-closed.
+    # Check terminal system order, ranks and winner.
     if got.name == 'NP11_COMPUTED_OUTPUTS_PRECOMPARISON.csv':
         if [r['system'] for r in gr] != ['S1','S2','S3','S4']:
             return False, 'terminal system order changed'

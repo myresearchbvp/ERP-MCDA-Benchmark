@@ -1,6 +1,6 @@
 # Reproducibility scope
 
-The default route reproduces the benchmark computations from repository-contained extracted and standardized research inputs without requiring third-party publication bytes. It verifies native reconstructions, decision-stability analyses, final source-resolution consistency, and publication-source objects. Analyses that cannot be evaluated from the available inputs, or do not apply to a given method, retain their documented `NE` classification.
+The default route reproduces the benchmark computations from repository-contained extracted and standardized research inputs without requiring third-party source files. It verifies native reconstructions, decision-stability analyses, source-resolution classifications, and the data underlying the tables and figures. Score agreement is assessed at the precision reported by each source. Analyses that cannot be evaluated from the available inputs, or do not apply to a given method, retain their documented `NE` classification.
 
 The NP04 source-workbook comparison is preserved as a source-artifact audit. Because the publisher workbook is not redistributed, the offline route recomputes the primary Eq. (31) branch and integrity-checks the repository's documented source-audit records.
 

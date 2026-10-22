@@ -21,7 +21,7 @@ def build(repo:Path,out:Path):
                 val='NE' if r['NP_ID'] in {'NP08','NP09','NP10'} else ('YES' if 'full rank YES' in r['Native_reconstruction'] or r['NP_ID'] in {'NP05','NP07','NP11','NP12'} else ('NO' if 'full rank NO' in r['Native_reconstruction'] else r['Native_reconstruction']))
             elif dim=='score_agreement':
                 if r['NP_ID'] in {'NP08','NP09','NP10'}: val='NE'
-                elif r['NP_ID']=='NP05': val='MIXED_2_OF_6_EXACT'
+                elif r['NP_ID']=='NP05': val='MIXED_2_OF_6_MATCH_SOURCE_PRECISION'
                 elif r['NP_ID']=='NP12': val='YES'
                 elif 'scores NO' in r['Native_reconstruction']: val='NO'
                 else: val=r['Native_reconstruction']
@@ -41,7 +41,7 @@ def build(repo:Path,out:Path):
     for d in ['0.05','0.10','0.20','0.30','0.40']:
         f2.append({'NP_ID':'NP05','series':'ALL_SIX_CO_PRIMARY_CONFIGURATIONS','delta':d,'declared_draws':'10000 per configuration','retention_metric':'baseline_winner','retention_fraction':'1.000000000000','render_role':'ANNOTATION_NOT_SIX_IDENTICAL_LINES','source_reference':'R2B_TERMINAL_WEIGHT_PERTURBATION_SUMMARY','denominator_metadata':'6 co-primary configurations × 10,000 draws per delta; no pooled lineage-wide draw denominator','ne_no_semantics':'not applicable','branch_configuration_label':'six co-primary configurations remain one lineage','provenance':'results/reference/robustness/R2B/R2B_TERMINAL_WEIGHT_PERTURBATION_SUMMARY.csv'})
     write(out/'figure_2_terminal_weight_trajectories.csv',f2)
-    # Figure S1 single-criterion deletion descriptive source data: include all cross-case rows and explicit preflight/result denominator metadata
+    # Additional criterion-deletion diagnostic data
     cross=read(repo/'results/reference/robustness/R2C/R2C_CROSS_CASE_SUMMARY.csv')
     pre={r['NP_ID']:r for r in auth}
     f3=[]
@@ -49,7 +49,7 @@ def build(repo:Path,out:Path):
         a=pre[r['NP_ID']]
         f3.append({'NP_ID':r['NP_ID'],'single_criterion_deletion_applicability':r['single_criterion_deletion_applicability'],'operation_type':r['operation_type'],'applicable_deletion_count':r['applicable_deletion_count'],'winner_or_recommendation_retention_share':r['winner_or_recommendation_retention_share'],'winner_or_recommendation_critical_deletions':r['winner_or_recommendation_critical_deletions'],'branch_configuration_caveat':r['branch_configuration_caveat'],'preflight_status':a['Single_criterion_deletion_preflight'],'execution_status':a['Single_criterion_deletion_execution_status'],'exact_denominator_publication':a['Single_criterion_deletion_exact_denominator'],'source_reference':'R2C_CROSS_CASE_SUMMARY + INTEGRATED_EVIDENCE_MATRIX','denominator_metadata':'8 applicable and result-producing lineages; 118 original + 6 post hoc NP11 deletion rows; 41 current NE spec rows','ne_no_semantics':'NE is non-evaluable/not executed, not instability','branch_configuration_label':'NP03 two branches separate; NP05 six configs one lineage with C6 NE; NP11 six post hoc fixed-local LFPP deletions','provenance':'results/reference/robustness/R2C/R2C_CROSS_CASE_SUMMARY.csv'})
     write(out/'figure_s1_single_criterion_deletion_summary.csv',f3)
-    # Figure S2 NP04 source-workbook comparison records
+    # Additional NP04 source-workbook diagnostic data
     defect=read(repo/'results/reference/robustness/R2D/R2D_NP04_SOURCE_WORKBOOK_INCONSISTENCY_AUDIT.csv')
     f4=[]
     for r in defect:

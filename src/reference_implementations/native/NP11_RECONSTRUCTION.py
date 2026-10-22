@@ -72,17 +72,17 @@ def main():
     trip_rows=[r for r in rows if r['kind'] in ('criteria_pairwise','alternative_pairwise')]
     tri_ok=all(float(r['l'])>0 and float(r['l'])<=float(r['m'])<=float(r['u']) for r in trip_rows)
     validation=['NP11 PRECOMPARISON VALIDATION',
-        'primary ERP ranking engine: LFPP only; DEMATEL excluded under the documented source-defined ERP ranking scope — PASS',
-        f'criteria pairwise upper-triangle entries={len(crit_rows)} expected=15 — '+('PASS' if len(crit_rows)==15 else 'FAIL'),
-        f'alternative pairwise entries={len([r for r in rows if r["kind"]=="alternative_pairwise"])} expected=36 — '+('PASS' if len([r for r in rows if r['kind']=='alternative_pairwise'])==36 else 'FAIL'),
-        'triangular fuzzy invariants 0<l<=m<=u — '+('PASS' if tri_ok else 'FAIL'),
-        're-evaluated a45=(1,2,3) used; superseded first-evaluated (3,4,5) excluded — PASS',
-        f'criteria_weight_sum={cw.sum():.12f} — '+('PASS' if abs(cw.sum()-1)<1e-10 else 'FAIL'),
-        'local_weight_sums — '+('PASS' if all(abs(x-1)<1e-10 for x in local.sum(axis=1)) else 'FAIL'),
-        'lambda nonnegative — '+('PASS' if crit['lambda']>=0 and all(d['lambda']>=0 for d in details) else 'FAIL'),
-        'NaN/inf check — '+('PASS' if np.isfinite(totals).all() and np.isfinite(local).all() and np.isfinite(cw).all() else 'FAIL'),
-        'tie handling: descending total global weight; no reconstructed terminal tie — PASS',
-        'terminal reconstruction checks completed under the documented source-defined ERP ranking scope — PASS']
+        'primary ERP ranking engine: LFPP only; DEMATEL excluded under the documented source-defined ERP ranking scope: PASS',
+        f'criteria pairwise upper-triangle entries={len(crit_rows)} expected=15: '+('PASS' if len(crit_rows)==15 else 'FAIL'),
+        f'alternative pairwise entries={len([r for r in rows if r["kind"]=="alternative_pairwise"])} expected=36: '+('PASS' if len([r for r in rows if r['kind']=='alternative_pairwise'])==36 else 'FAIL'),
+        'triangular fuzzy invariants 0<l<=m<=u: '+('PASS' if tri_ok else 'FAIL'),
+        're-evaluated a45=(1,2,3) used; superseded first-evaluated (3,4,5) excluded: PASS',
+        f'criteria_weight_sum={cw.sum():.12f}: '+('PASS' if abs(cw.sum()-1)<1e-10 else 'FAIL'),
+        'local_weight_sums: '+('PASS' if all(abs(x-1)<1e-10 for x in local.sum(axis=1)) else 'FAIL'),
+        'lambda nonnegative: '+('PASS' if crit['lambda']>=0 and all(d['lambda']>=0 for d in details) else 'FAIL'),
+        'NaN/inf check: '+('PASS' if np.isfinite(totals).all() and np.isfinite(local).all() and np.isfinite(cw).all() else 'FAIL'),
+        'tie handling: descending total global weight; no reconstructed terminal tie: PASS',
+        'terminal reconstruction checks completed under the documented source-defined ERP ranking scope: PASS']
     (HERE/'NP11_RECONSTRUCTION_VALIDATION.txt').write_text('\n'.join(validation)+'\n',encoding='utf-8')
 
 if __name__=='__main__': main()
